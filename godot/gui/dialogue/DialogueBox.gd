@@ -14,6 +14,7 @@ onready var proceed_indicator_timer = get_node("BoxPanel/ProceedIndicator/Timer"
 
 func _set_text(new_val):
 	dialogue_text.text = new_val
+	_animate_dialogue_text()
 
 func _get_text():
 	return dialogue_text.text
@@ -26,7 +27,6 @@ func _get_display_name():
 
 func _ready():
 	yield(get_tree().create_timer(1.0), "timeout")
-	_animate_dialogue_text()
 	proceed_indicator_timer.connect("timeout", self, "_on_ProceedIndicator_switch")
 
 func _on_ProceedIndicator_switch():
@@ -37,5 +37,6 @@ func _on_animation_finished(animation_name):
 
 func _animate_dialogue_text():
 	tween.stop_all()
+	tween.reset_all()
 	tween.interpolate_property(dialogue_text, "percent_visible", 0.0, 1.0, len(self.text) * 0.01)
 	tween.start()
