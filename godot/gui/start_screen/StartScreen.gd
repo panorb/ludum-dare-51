@@ -8,6 +8,8 @@ onready var option_button: Button = get_node("VBoxContainer/OptionButton")
 onready var credit_button: Button = get_node("VBoxContainer/CreditButton")
 onready var quit_button: Button = get_node("VBoxContainer/QuitButton")
 
+signal start_button_pressed
+
 func _ready():
 	quit_button.disabled = OS.get_name() == "HTML5"
 	v_box_container.visible = false
@@ -27,7 +29,7 @@ func _ready():
 	#yield(get_tree().create_timer(3), "timeout")
 
 func _on_StartButton_pressed():
-	print("Start")
+	emit_signal("start_button_pressed")
 
 func _on_OptionButton_pressed():
 	print("Option")
