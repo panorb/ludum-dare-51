@@ -1,12 +1,14 @@
 extends Node
 
 onready var scenes = get_node("Scenes")
-var final_battle : Resource = preload("res://battle/FinalBattle.tscn")
+var final_battle : PackedScene = preload("res://battle/FinalBattle.tscn")
+var start_screen : PackedScene = preload("res://gui/StartScreen.tscn")
 var i := 0
 
 func _ready():
 	print("David exhausted? " + str(Globals.david_exhausted))
-	add_child(final_battle.instance())
+	add_child(start_screen.instance())
+	# add_child(final_battle.instance())
 	# i = "hallo"
 
 # Wird jedes Idleframe aufgerufen (Normalerweise 60x die Sekunde, kann aber auch weniger)
