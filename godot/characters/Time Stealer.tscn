@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://battle/enemy/Time Stealer.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+width = 96
+
+[node name="Time Stealer" type="Sprite"]
+scale = Vector2( 1, 96 )
+texture = SubResource( 2 )
+offset = Vector2( 0, -0.5 )
+script = ExtResource( 1 )
