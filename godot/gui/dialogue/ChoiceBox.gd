@@ -11,9 +11,15 @@ func _set_choices(new_val):
 	selected_index = 0
 	_choice_amount = len(new_val)
 	
-	for i in range(len(new_val)):
+	for i in range(3):
 		var choice_node = _choices_node.get_node("Choice" + str(i + 1))
-		choice_node.text = new_val[i]
+		
+		if i < len(new_val):
+			choice_node.visible = true
+			choice_node.text = new_val[i]
+		else:
+			choice_node.visible = false
+			choice_node.text = "[This should never be visible.]"
 	
 	_update_choice_display()
 
