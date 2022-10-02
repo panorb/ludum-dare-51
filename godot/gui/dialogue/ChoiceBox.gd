@@ -1,11 +1,16 @@
 extends Control
 
+var question setget _set_question
 var choices setget _set_choices
 var selected_index := 0
 var _choice_amount := 3
 
+onready var _question_node = get_node("%Question")
 onready var _choices_node = get_node("%Choices")
 signal choice_selected(choice_index)
+
+func _set_question(new_val):
+	_question_node.text = new_val
 
 func _set_choices(new_val):
 	selected_index = 0
