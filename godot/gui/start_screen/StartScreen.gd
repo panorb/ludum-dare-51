@@ -11,7 +11,7 @@ onready var quit_button: Button = get_node("VBoxContainer/QuitButton")
 signal start_button_pressed
 
 func _ready():
-	quit_button.disabled = OS.get_name() == "HTML5"
+	quit_button.visible = OS.get_name() != "HTML5"
 	v_box_container.visible = false
 	color_rect2.visible = false
 	animation_player.play("Fade in")
