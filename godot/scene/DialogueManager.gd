@@ -88,10 +88,12 @@ func set_local_var():
 	var var_name = current_node["var_name"]
 	
 	if current_node["operation_type"] == "ADD":
-		local[var_name]+= current_node["value"]
+		local[var_name] += current_node["value"]
 	if current_node["operation_type"] == "SUBSTRACT":
 		local[var_name] -= current_node["value"]
 	if current_node["operation_type"] == "SET":
+		local[var_name] = current_node["value"]
+	if current_node.has("toggle"):
 		local[var_name] = current_node["value"]
 	
 	auto_next()
