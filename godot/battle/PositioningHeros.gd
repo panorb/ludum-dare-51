@@ -57,7 +57,10 @@ func calculate_supporter_count():
 func init_positions():
 	alex.position = alex_position_left_up + (2 * Vector2(0,48)) + Vector2(68,0)
 	health_bar_alex.rect_position = alex.position + Vector2(0, -48) - health_bar_alex.rect_pivot_offset
-	frame.position = position_left_up + (frame_level * Vector2(0,48))
+	if number_of_supporter > 0:
+		frame.position = position_left_up + (frame_level * Vector2(0,48))
+	else:
+		alex.position
 	var count : int = 1
 	if Globals.flags["DavidPresent"]:
 		david.position = position_left_up + (count * Vector2(0,48))
@@ -79,28 +82,28 @@ func init_positions():
 		count += 1
 
 func move_frame_up():
-	if frame_level == 1 || !frame_left:
+	if frame_level == 1 || !frame_left || number_of_supporter == 0:
 		return
 	else:
 		frame_level -= 1
 		frame.position = position_left_up + (frame_level * Vector2(0,48))
 		
 func move_frame_down():
-	if frame_level == number_of_supporter || !frame_left:
+	if frame_level == number_of_supporter || !frame_left || number_of_supporter == 0:
 		return
 	else:
 		frame_level += 1
 		frame.position = position_left_up + (frame_level * Vector2(0,48))
 		
 func move_frame_right():
-	if !frame_left:
+	if !frame_left || number_of_supporter == 0:
 		return
 	else:
 		frame_left = false
 		frame.position = alex.position
 		
 func move_frame_left():
-	if frame_left:
+	if frame_left || number_of_supporter == 0:
 		return
 	else:
 		frame_left = true
@@ -119,7 +122,6 @@ func switch_sprite():
 	if !frame_left:
 		alex.switch_attack_type()
 		reset_all_sprites()
-		#Alex wechsel der Waffen implementieren
 	else:
 		if list_supporters[frame_level - 1].on_cooldown:
 			print("Skill on Cooldown.")
@@ -130,8 +132,6 @@ func reset_all_sprites():
 	for supporter in list_supporters:
 		if supporter.show_sprite == supporter.SKILL_ACTIVE:
 			supporter.reset_sprite()
-		
-		
 		if supporter.is_usable(alex.attack_type):
 			supporter.self_modulate = Color(1.0, 1.0, 1.0, 1.0)
 		else:

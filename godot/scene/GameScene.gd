@@ -61,9 +61,6 @@ func load_next_dialogue():
 		SoundController.crossfade_music_channels(1,0)
 		SoundController.play_channel(0)
 	elif tmp == null:
-		SoundController.load_music("Time_is_running_out.mp3", 1)
-		SoundController.crossfade_music_channels(0,1)
-		SoundController.play_channel(1)
 		emit_signal("end_of_dialog")
 		return
 	dialogue_manager.start_dialogue("res://content/dialogue/" + tmp + ".json")

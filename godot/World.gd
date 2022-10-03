@@ -24,6 +24,9 @@ func back_to_title():
 	change_scene(start_screen)
 
 func start_endfight():
+	SoundController.load_music("Time_is_running_out.mp3", 1)
+	SoundController.crossfade_music_channels(0,1)
+	SoundController.play_channel(1)
 	change_scene(final_battle)
 	
 func end_of_game(value : bool):
