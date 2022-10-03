@@ -130,7 +130,7 @@ func show_message():
 		var tmp = []
 		for i in range(len(current_node["choices"])):
 			if not current_node["choices"][i]["is_condition"] or \
-			 evaluate_value(current_node["choices"][i]["condition"]):
+			 evaluate_complex_condition(current_node["choices"][i]["condition"]):
 				tmp.append(current_node["choices"][i]["text"]["ENG"])
 		choice_box.choices = tmp
 	elif current_node["character"][0] == "Narrator":
@@ -200,12 +200,25 @@ func chance_branch():
 func condition_branch():
 	var condition = current_node["text"]
 	
-	if evaluate_value(condition):
+	if evaluate_complex_condition(condition):
 		current_node = get_dialogue_node_by_id(current_node["branches"]["True"])
 	else:
 		current_node = get_dialogue_node_by_id(current_node["branches"]["False"])
 	
 	handle_current_node()
+
+func evaluate_complex_condition(condition : String):
+	var parts : PoolStringArray = condition.split(" ")
+	
+	var result = evaluate_value(" ".join([parts[0], parts[1], parts[2]]))
+	
+	for connecter_idx in range(3, len(parts), 4):
+		if parts[connecter_idx] == "or":
+			result = result or evaluate_value(" ".join([parts[connecter_idx + 1], parts[connecter_idx + 2], parts[connecter_idx + 3]]))
+		elif parts[connecter_idx] == "and":
+			result = result and evaluate_value(" ".join([parts[connecter_idx + 1], parts[connecter_idx + 2], parts[connecter_idx + 3]]))
+		
+	return result
 
 func evaluate_value(condition : String):
 	var parts : PoolStringArray = condition.split(" ")
@@ -217,9 +230,9 @@ func evaluate_value(condition : String):
 	
 	match comparator:
 		"==": # Equality comparisions
-			return var_value == value
+			return var_value.to_lower() == value.to_lower()
 		"!=":
-			return var_value != value
+			return var_value.to_lower() != value.to_lower()
 		">=": # Number comparisions
 			return float(var_value) >= float(value)
 		"<=":
