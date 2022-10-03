@@ -1,0 +1,77 @@
+Vor langer Zeit lebten die Menschen harmonisch mit ihrer Umwelt zusammen.
+Diese Jahrhunderte währende Harmonie wurde abrubt unterbrochen, nachdem ein Wesen,
+welches den Namen Time Stealer erhielt, aus dem nichts erschien.
+Der Time Stealer war in der Lage die Zeitreliquien der Welt abzuschalten und dadurch die Zeit einzufrieren.
+Glücklicherweise lebte zu dieser Zeit ein Held mit dem Namen Alex, welcher die Fähigkeit besaß, 
+sich in der Zeitfreien Zone zu bewegen und Teil der Armee des Landes war.
+
+Alex: Zehotath, wir sind gekommen um dich zu töten! Wir haben eine lange Reise hinter uns und sind bereit!
+Zehotath: Das werden wir ja noch sehen, du nichts von einem Menschen!
+
+Der Beginn des Chaos startete durch eine Falle für die königlische Armee, wodurch diese in der Zeitfreien Zone war.
+Aus Angst und Sorgen um seine Familie, wegen der Zeitfreien Zonen begab sich Alex zurück in sein Heimatdorf. Dort angekommen
+musste er feststellen, dass ebenfalls dort die Zeit eingefroren war. Da Alex den Weg zur Zeitreliquie kennt, reist er sofort
+weiter. 
+
+Wie soll Alex zur Zeitreliquie gelangen?
+	1 - Durch das Unterholz des Waldes.
+	2 - Über die Hauptstraße welche von Händlern benutz wurde.
+	3 - Über das freie Feld.
+	
+1 und 2: Alex kommt ungeschadet in der Stadt an, in welcher sich die Zeitreliquie befindet.
+3: Aufgrund fehlender Deckung wird Alex in der ferne von einen Wesen wahrgenommen, welches im Moment seiner Ankunft in der 
+Stadt mit der Zeitreliquie davon fliegt. Darauf hin fällt Alex auf seine Knie, in Trauer seine Familie nicht sofort retten 
+zu können und reist weiter zur nächsten Zeitreliquie:
+
+Nach 1 und 2: In der Stadt sind viele Menschen zu shen welche einen normalen Alltag erlebt haben und nun erstart in der 
+Gegend stehen. Nun muss Alex noch zu dem Gebäude kommen, in welchem sich die Zeitreliquie befindet.
+
+Wie soll Alex zu dem Gebäude gelangen?
+	1 - Über die Hauptstraße, welche voller Menschen ist.
+	2 - Über die dunklen Nebengassen.
+	3 - Durch die Kanalisation.
+	
+Vor dem Gebäude angekommen, sieht Alex einen kleinen Jungen mit einer Steinschleuder auf den Eingang des Gebaudes zielen,
+dessen Tore weit offen stehen. Durch seine militärische Ausbildung weiß Alex sofort das sich ein Feind im Gebäude befinden 
+muss. Als er die Halle der Zeitreliquie betritt, sieht er ein Wesen an der Zeitreliquie herumwusseln. Es hat ähnlichkeit zu
+zu einem Tenkal eines Oktupus und hält Hammer und Meißel in der Hand. 
+
+Wie soll Alex auf das Wesen reagieren?
+	1 - Direkt auf das Wesen losstürmen und probieren es zu erlegen.
+	2 - Einen Stein an die Wand werfen, um das Wesen abzulenken.
+	3 - Voller Hass "Ich töte dich!" brüllen.
+	
+1 und 3: Alex erweckt die Aufmerksamkeit des Wesens und wird von diesem angegriffen, bevor er in der Lage ist das Wesen selbst 
+zu erreichen. Der Treffer des Wesen ist so schwerwiegend, dass Alex ohnmächtig auf dem Boden zusammenklappt. Als er wieder 
+aufwacht ist das Wesen nicht mehr zu sehen und die Zeitreliquie verschwunden. Nach einer kurzen Trauer wegen der verpassten 
+Chance bricht Alex zur nächsten Zeitreliquie auf.
+2: Das Wesen hört das Geräusch und verläst die Zeitreliquie.
+
+Wie soll Alex die Ablenkung nutzen?
+	1 - Zeit nutzen, um die Zeitreliquie zu reaktivieren.
+	2 - Das Wesen von hinten schwer treffen.
+	
+1: Alex hat nicht genügend Zeit für die Reaktivierung, erweckt die Aufmerksamkeit des Wesens und wird von diesem 
+angegriffen, bevor er in der Lage ist das Wesen selbst zu erreichen. Der Treffer des Wesen ist so schwerwiegend, dass Alex 
+ohnmächtig auf dem Boden zusammenklappt. Als er wieder aufwacht ist das Wesen nicht mehr zu sehen und die Zeitreliquie 
+verschwunden. Nach einer kurzen Trauer wegen der verpassten Chance bricht Alex zur nächsten Zeitreliquie aus.
+2: Alex kann das Wesen, durch einen schweren Treffer am Auge des Wesens, ohnmächtig schlagen. Danach hat er genügend Zeit die 
+Zeitreliquie wieder zu aktivieren und erneut zu befestigen. Nachdem die Zeitreliquie wieder aktiviert ist, taut die Zeit 
+wieder auf und die Leute können sich wieder bewegen. Als Alex aus der Halle wieder ins Freie schreitet, stehen dort eine große 
+Menschenmenge, welche ihn feiern für ihre Rettung. Der kleine Junge von vorhin ist ebenfalls in der ersten Reihe. In dem 
+Moment in dem Alex weiterreisen möchte, spricht in der Junge an.
+
+David: Ich heiße David und habe das Wesen, gegen das du gekämpft hast, gesehen, als ich vor den Toren der Zeitreliquie mit 
+anderen Kindern gespielt habe. Ich habe probiert es aufzuhalten, jedoch gelang es mir nicht.
+Alex: Dein Mut hat mir aber trotzdem geholfen.
+David: Wirklich??? Wie genau???
+Alex: Du hast mich damit auf einen Gegner in der Halle aufmerksam gemacht.
+David: Achso okay.
+Alex: Ich muss schnell weiter um die anderen Zeitreliquien zu retten, damit wir diesem Chaos ein Ende setzen können.
+David: Ich werde dich begleiten und dir helfen diese Monster wieder zu vertreiben.
+Alex: Aber du bist so jung, was ist mit deinen Eltern oder Verwandten?
+David: Die... gibt es nicht mehr. Ich bin alles was ich hab!
+Alex: Wenn das so ist, dann begleite mich, wenn du möchtest.
+David: Juhu!
+
+David schließt sich der Gruppe von Alex an und die Gruppe begibt sich zur nächsten Zeitreliquie.

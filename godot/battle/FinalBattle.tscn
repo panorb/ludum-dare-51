@@ -21,7 +21,7 @@ script = ExtResource( 4 )
 
 [node name="Gandalf" parent="PositioningHeros" instance=ExtResource( 2 )]
 
-[node name="Gimbli" parent="PositioningHeros" instance=ExtResource( 3 )]
+[node name="Porkus" parent="PositioningHeros" instance=ExtResource( 3 )]
 
 [node name="PositioningBoss" type="Node2D" parent="."]
 script = ExtResource( 6 )
