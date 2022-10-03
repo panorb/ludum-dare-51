@@ -12,10 +12,10 @@ var effect_volume := 0.6
 
 var flags := {
 	"AlexExhausted": false,
-	"DavidPresent": true,
-	"PorkusPresent": true,
-	"LilithPresent": true,
+	"DavidPresent": false,
+	"PorkusPresent": false,
+	"LilithPresent": false,
 	"AelrinPresent": false,
-	"DraculaPresent": true,
-	"GandalfPresent": true
+	"DraculaPresent": false,
+	"GandalfPresent": false
 }

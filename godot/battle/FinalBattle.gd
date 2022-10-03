@@ -19,6 +19,8 @@ onready var tween = get_node("Tween")
 onready var list_supporters = []
 var end_off_game : bool = false
 
+signal end_of_battle(win)
+
 func _ready():
 	if Globals.flags["DavidPresent"]:
 		list_supporters.append(david)
@@ -141,7 +143,7 @@ func damage_alex():
 		positioning_heros.change_value_health_bar(alex.health)
 		
 	if time_stealer.health <= 0:
-		print("You Win.")
+		emit_signal("end_of_battle", true)
 		end_off_game = true
 	positioning_boss.change_value_health_bar(time_stealer.health)
 	print("Damage: ", damage, " CritChance: ", critchance, " Accurancy: ", accurancy)
@@ -157,7 +159,7 @@ func damage_time_stealer():
 		alex.health -= time_stealer.damage
 	
 	if alex.health <= 0:
-		print("You Lose.")
+		emit_signal("end_of_battle", false)
 		end_off_game = true
 	
 	positioning_heros.change_value_health_bar(alex.health)

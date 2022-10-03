@@ -13,8 +13,9 @@ var pause_scene : Node
 var paused : bool = false
 
 signal back_to_title
+signal end_of_dialog
 
-var dialogue_order = ["Intro_Part1", "Intro_Part2", "Intro_Part3", "Chapter2P1", "Chapter2P2", "Chapter2P3", "Chapter3", "Chapter4"]
+var dialogue_order = ["Intro_Part1", "Intro_Part2", "Intro_Part3", "Chapter2P1", "Chapter2P2", "Chapter2P3", "Chapter3", "Chapter4", "BossfightBeginning"]
 
 func _ready():
 	dialogue_manager.connect("dialogue_finished", self, "load_next_dialogue")
@@ -38,6 +39,7 @@ func _on_ResumeButton_pressed():
 func _on_BackToTitleButton_pressed():
 	pause_scene.queue_free()
 	paused = false
+	SoundController.stop_all()
 	emit_signal("back_to_title")
 
 func load_image(image_name : String):
@@ -54,10 +56,14 @@ func load_next_dialogue():
 		SoundController.load_music("Time_flows_new.mp3", 1)
 		SoundController.crossfade_music_channels(0,1)
 		SoundController.play_channel(1)
-	elif tmp == null:
-		SoundController.load_music("Time_is_running_out.mp3", 0)
+	elif tmp == "BossfightBeginning":
+		SoundController.load_music("Start_the_clock.mp3", 0)
 		SoundController.crossfade_music_channels(1,0)
 		SoundController.play_channel(0)
-		print("Ende")
+	elif tmp == null:
+		SoundController.load_music("Time_is_running_out.mp3", 1)
+		SoundController.crossfade_music_channels(0,1)
+		SoundController.play_channel(1)
+		emit_signal("end_of_dialog")
 		return
 	dialogue_manager.start_dialogue("res://content/dialogue/" + tmp + ".json")

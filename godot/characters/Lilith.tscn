@@ -6,3 +6,7 @@
 [node name="Lilith" instance=ExtResource( 1 )]
 self_modulate = Color( 1, 1, 1, 0 )
 script = ExtResource( 2 )
+
+[node name="AfterImage" parent="." index="0"]
+self_modulate = Color( 0.733333, 0.454902, 0.454902, 1 )
+frame = 0

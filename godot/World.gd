@@ -6,6 +6,7 @@ var start_screen : PackedScene = preload("res://gui/start_screen/StartScreen.tsc
 var developer_screen : PackedScene = preload("res://gui/developerscreen/DeveloperScreen.tscn")
 var pause_screen : PackedScene = preload("res://gui/pause_screen/PauseScreen.tscn")
 var game_screen : PackedScene = preload("res://scene/GameScene.tscn")
+var end_screen : PackedScene = preload("res://scene/EndScene.tscn")
 var current_scene : Node
 
 func _ready():
@@ -22,14 +23,30 @@ func start_game():
 func back_to_title():
 	change_scene(start_screen)
 
+func start_endfight():
+	change_scene(final_battle)
+	
+func end_of_game(value : bool):
+	SoundController.stop_all()
+	change_scene(end_screen)
+	current_scene.win = value
+
 func change_scene(scene : PackedScene):
 	if current_scene:
 		current_scene.queue_free()
 	current_scene = scene.instance()
 	add_child(current_scene)
-	current_scene.connect("start_button_pressed", self, "start_game")
-	current_scene.connect("back_to_title", self, "back_to_title")
-	current_scene.connect("go_to_start_screen", self, "back_to_title")
+	
+	if current_scene.has_signal("start_button_pressed"):
+		current_scene.connect("start_button_pressed", self, "start_game")
+	if current_scene.has_signal("back_to_title"):
+		current_scene.connect("back_to_title", self, "back_to_title")
+	if current_scene.has_signal("go_to_start_screen"):
+		current_scene.connect("go_to_start_screen", self, "back_to_title")
+	if current_scene.has_signal("end_of_dialog"):
+		current_scene.connect("end_of_dialog", self, "start_endfight")
+	if current_scene.has_signal("end_of_battle"):
+		current_scene.connect("end_of_battle", self, "end_of_game")
 
 # Wird jedes Idleframe aufgerufen (Normalerweise 60x die Sekunde, kann aber auch weniger)
 func _process(delta):

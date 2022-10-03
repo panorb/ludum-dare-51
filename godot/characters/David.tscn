@@ -7,3 +7,6 @@
 [node name="David" instance=ExtResource( 1 )]
 frames = ExtResource( 3 )
 script = ExtResource( 2 )
+
+[node name="AfterImage" parent="." index="0"]
+frame = 0
