@@ -6,7 +6,7 @@ var xbox_atlas : AtlasTexture = preload("xbox.atlastex")
 var button = "qte_a" setget _set_button
 
 onready var texture_rect = get_node("TextureRect")
-onready var tween = get_node("Tween")
+onready var tween : Tween = get_node("Tween")
 onready var pressed_animation_timer = get_node("PressedAnimationTimer")
 
 var _animate_press = false
@@ -25,6 +25,7 @@ var _button_map = {
 
 func _ready():
 	texture_rect.texture = xbox_atlas.duplicate()
+	texture_rect.material = texture_rect.material.duplicate()
 
 func _on_pressed_animation_timeout():
 	if _animate_press:
@@ -36,7 +37,7 @@ func _input(event):
 		texture_rect.texture = xbox_atlas.duplicate()
 	elif event is InputEventKey:
 		texture_rect.texture = keyboard_atlas.duplicate()
-	
+
 	_update_displayed_button()
 
 func _set_button(new_val : String):
@@ -51,6 +52,7 @@ func _update_displayed_button():
 	texture_atlas.region = Rect2(image_index * 16, int(_show_pressed) * 16, 16, 16)
 
 func highlight():
+	tween.remove_all()
 	tween.interpolate_property(texture_rect.material, "shader_param/line_thickness", 0.0, 1.0, 0.2, Tween.TRANS_QUAD)
 	tween.interpolate_property(texture_rect, "rect_scale", Vector2(1.0, 1.0), Vector2(1.2, 1.2), 0.3, Tween.TRANS_QUAD)
 	tween.start()
@@ -59,6 +61,7 @@ func highlight():
 	
 func gray_out():
 	texture_rect.material["shader_param/line_thickness"] = 0.0
+	tween.remove_all()
 	tween.interpolate_property(texture_rect, "rect_scale", Vector2(1.2, 1.2), Vector2(0.7, 0.7), 0.1, Tween.TRANS_QUAD)
 	tween.start()
 	

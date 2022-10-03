@@ -1,6 +1,6 @@
 extends Node
 
-const MUSIC_LAYERS: int = 1
+const MUSIC_LAYERS: int = 2
 const EFFECT_LAYERS: int = 20
 var _effect: Array = []
 var _music: Array = []
@@ -33,7 +33,7 @@ func play_music(filename: String, channel: int = 0, \
 	if volume < 0:
 		volume = Globals.music_volume
 	
-	var path = "res://Shared/Music/" + filename
+	var path = "res://sounds/" + filename
 	
 	var stream = load(path)
 	_music[channel].volume_db = linear2db(volume)
@@ -84,10 +84,16 @@ func play_effect(filename: String, pitch_scale : float = 1, volume : float = -1)
 	_effect[effect_channel_idx].play()
 
 
-func stop_music()-> void:
-	for i in range(MUSIC_LAYERS):
-		_music[i].stop()
-
+func stop_music(channel: int = -1)-> void:
+	if channel < 0:
+		for i in range(MUSIC_LAYERS):
+			_music[i].stop()
+			_music[i].stop()
+			_music[i].stop()
+	else:
+		_music[channel].stop()
+		_music[channel].stop()
+		_music[channel].stop()
 
 func stop_effect(channel: int) -> void:
 	_effect[channel].stop()

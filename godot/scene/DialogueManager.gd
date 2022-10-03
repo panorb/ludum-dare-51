@@ -11,16 +11,15 @@ var box_style : String = ""
 var dialogue_box_scene = preload("res://gui/dialogue/DialogueBox.tscn")
 var choice_box_scene = preload("res://gui/dialogue/ChoiceBox.tscn")
 var narrator_stage_scene = preload("res://gui/dialogue/NarratorStage.tscn")
+var qte_sequence_scene = preload("res://gui/quicktime/QTESequence.tscn")
 
 onready var dialogue_box : Control = get_node("DialogueBox")
 onready var choice_box : Control = get_node("ChoiceBox")
 onready var narrator_stage : Control = get_node("NarratorStage")
+onready var qte_sequence : Control = get_node("QTESequence")
 
 signal dialogue_signal(command)
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+signal dialogue_finished
 
 func change_box_style(new_style):
 	if box_style == new_style:
@@ -37,21 +36,29 @@ func change_box_style(new_style):
 	if narrator_stage and narrator_stage.is_inside_tree():
 		remove_child(narrator_stage)
 		narrator_stage = null
+	if qte_sequence and qte_sequence.is_inside_tree():
+		remove_child(qte_sequence)
+		qte_sequence = null
 	
 	match box_style:
 		"Dialogue":
 			dialogue_box = dialogue_box_scene.instance()
 			add_child(dialogue_box)
-			dialogue_box.connect("reading_finished", self, "on_reading_finished")
+			dialogue_box.connect("reading_finished", self, "_on_reading_finished")
 		"Choice":
 			choice_box = choice_box_scene.instance()
 			add_child(choice_box)
-			choice_box.connect("choice_selected", self, "on_choice_selected")
+			choice_box.connect("choice_selected", self, "_on_choice_selected")
 		"Stage":
 			narrator_stage = narrator_stage_scene.instance()
 			add_child(narrator_stage)
-			narrator_stage.connect("reading_finished", self, "on_reading_finished")
-			
+			narrator_stage.connect("reading_finished", self, "_on_reading_finished")
+		"QTE":
+			qte_sequence = qte_sequence_scene.instance()
+			add_child(qte_sequence)
+			qte_sequence.connect("qte_success", self, "_on_qte_result", [true])
+			qte_sequence.connect("qte_timeout", self, "_on_qte_result", [false])
+		
 
 func load_data(json_path):
 	var file = File.new()
@@ -99,13 +106,21 @@ func start_dialogue(json_path):
 	auto_next()
 	handle_current_node()
 	
-func on_choice_selected(choice_index):
+func _on_choice_selected(choice_index):
 	current_node = get_dialogue_node_by_id(current_node["choices"][choice_index]["next"])
 	handle_current_node()
 	
-func on_reading_finished():
+func _on_reading_finished():
 	auto_next()
 	handle_current_node()
+
+func _on_qte_result(result):
+	if result:
+		current_node = get_dialogue_node_by_id(current_node["branches"]["success"])
+	else:
+		current_node = get_dialogue_node_by_id(current_node["branches"]["fail"])
+	handle_current_node()
+
 
 func show_message():
 	if current_node["character"][0] == "Player":
@@ -136,7 +151,12 @@ func auto_next():
 
 func handle_current_node():
 	if not current_node:
-		narrator_stage.text = "Next Chapter"#assert(false, "Implement next chapter here")
+		for variable in local.keys():
+			if Globals.flags.has(variable):
+				Globals.flags[variable] = local[variable]
+		
+		emit_signal("dialogue_finished")
+		# narrator_stage.text = "Next Chapter"#assert(false, "Implement next chapter here")
 	elif current_node["node_type"] == "condition_branch":
 		condition_branch()
 	elif current_node["node_type"] == "show_message":
@@ -147,12 +167,18 @@ func handle_current_node():
 		chance_branch()
 	elif current_node["node_type"] == "dialogue_signal":
 		emit_dialogue_signal()
+	elif current_node["node_type"] == "qte":
+		start_qte()
 
 func emit_dialogue_signal():
 	emit_signal("dialogue_signal", current_node["signal"])
 	
 	auto_next()
 	handle_current_node()
+
+func start_qte():
+	change_box_style("QTE")
+	qte_sequence.sequence = current_node["qte"].split(" ")
 
 func chance_branch():
 	var chance_1 = current_node["chance_1"]

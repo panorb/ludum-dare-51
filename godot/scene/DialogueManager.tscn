@@ -1,34 +1,25 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://gui/dialogue/DialogueBox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://gui/dialogue/ChoiceBox.tscn" type="PackedScene" id=2]
 [ext_resource path="res://gui/dialogue/NarratorStage.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scene/DialogueManager.gd" type="Script" id=4]
-[ext_resource path="res://gui/dialogue/NarratorStage.gd" type="Script" id=5]
-[ext_resource path="res://gui/dialogue/ChoiceBox.gd" type="Script" id=6]
-[ext_resource path="res://gui/dialogue/DialogueBox.gd" type="Script" id=7]
-[ext_resource path="res://gui/main_theme.tres" type="Theme" id=8]
+[ext_resource path="res://gui/quicktime/QTESequence.tscn" type="PackedScene" id=5]
 
 [node name="DialogueManager" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 4 )
 
-[node name="DialogueBox" type="Control" parent="." instance=ExtResource( 1 )]
-margin_right = 480.0
-margin_bottom = 270.0
+[node name="DialogueBox" parent="." instance=ExtResource( 1 )]
 input_pass_on_modal_close_click = false
-theme = ExtResource( 8 )
-script = ExtResource( 7 )
 
-[node name="ChoiceBox" type="Control" parent="." instance=ExtResource( 2 )]
+[node name="ChoiceBox" parent="." instance=ExtResource( 2 )]
+
+[node name="NarratorStage" parent="." instance=ExtResource( 3 )]
+
+[node name="QTESequence" parent="." instance=ExtResource( 5 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_right = 480.0
 margin_bottom = 270.0
-theme = ExtResource( 8 )
-script = ExtResource( 6 )
-
-[node name="NarratorStage" type="Control" parent="." instance=ExtResource( 3 )]
-margin_right = 480.0
-margin_bottom = 270.0
-theme = ExtResource( 8 )
-script = ExtResource( 5 )

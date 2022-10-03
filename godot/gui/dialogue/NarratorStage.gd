@@ -47,7 +47,6 @@ func _animation_finished():
 func _animate_dialogue_text():
 	_play_blips = true
 	
-	tween.stop_all()
-	tween.reset_all()
+	tween.remove_all()
 	tween.interpolate_property(dialogue_text, "percent_visible", 0.0, 1.0, len(self.text) * _animation_duration_per_char)
 	tween.start()

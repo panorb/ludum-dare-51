@@ -48,7 +48,6 @@ func _get_display_name():
 
 func _input(event):
 	if event.is_action_pressed("option_select"):
-		print("enter")
 		_play_blips = false
 		emit_signal("reading_finished")
 
@@ -56,8 +55,7 @@ func _on_ProceedIndicator_switch():
 	proceed_indicator.visible = dialogue_text.percent_visible == 1.0 and not proceed_indicator.visible
 
 func _animate_dialogue_text():
-	tween.stop_all()
-	tween.reset_all()
+	tween.remove_all()
 	tween.interpolate_property(dialogue_text, "percent_visible", 0.0, 1.0, len(self.text) *_animation_duration_per_char)
 	_play_blips = true
 	tween.start()

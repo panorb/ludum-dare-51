@@ -1,1 +1,165 @@
-[{"characters":["Player"],"connections":[{"from":"START","from_port":0,"to":"3261432","to_port":0},{"from":"3261432","from_port":0,"to":"4058003","to_port":0}],"editor_version":"3.2.4","file_name":"qteTest","languages":["ENG"],"nodes":[{"filename":"res://Nodes/Start.tscn","next":"3261432","node_name":"START","node_type":"start","offset":[0,0],"title":""},{"character":["Player",0],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"4058003","node_name":"3261432","node_type":"show_message","object_path":"","offset":[225,-115],"slide_camera":true,"speaker_type":0,"text":{"ENG":"Bae"},"title":"Show Message"},{"branches":{"fail":null,"success":null},"filename":"res://Nodes/QuickTimeEvent.tscn","node_name":"4058003","node_type":"qte","offset":[685,90],"qte":"qte_up qte_up qte_down qte_down qte_left qte_right qte_left qte_right qte_b qte_a","title":"QuickTimeEvent"}],"selected_language":"ENG","variables":{}}]
+[
+  {
+    "characters": [
+      "Player",
+      "Alex"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "3261432",
+        "to_port": 0
+      },
+      {
+        "from": "3261432",
+        "from_port": 0,
+        "to": "4058003",
+        "to_port": 0
+      },
+      {
+        "from": "4058003",
+        "from_port": 0,
+        "to": "3198863",
+        "to_port": 0
+      },
+      {
+        "from": "4058003",
+        "from_port": 1,
+        "to": "1448098",
+        "to_port": 0
+      },
+      {
+        "from": "1448098",
+        "from_port": 0,
+        "to": "3261432",
+        "to_port": 0
+      },
+      {
+        "from": "3198863",
+        "from_port": 0,
+        "to": "3261432",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.4",
+    "file_name": "qteTest",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "3261432",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          0,
+          0
+        ],
+        "title": ""
+      },
+      {
+        "branches": {
+          "fail": "1448098",
+          "success": "3198863"
+        },
+        "filename": "res://Nodes/QuickTimeEvent.tscn",
+        "node_name": "4058003",
+        "node_type": "qte",
+        "offset": [
+          680,
+          -100
+        ],
+        "qte": "qte_up qte_up qte_down qte_down qte_left qte_right qte_left qte_right qte_b qte_a",
+        "title": "QuickTimeEvent"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4058003",
+        "node_name": "3261432",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          115,
+          -285
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Hey Bae"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3261432",
+        "node_name": "3198863",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1115,
+          -420
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Erfolg! COOOL"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3261432",
+        "node_name": "1448098",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1060,
+          -120
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Satz mit X. Das war wohl nichts-"
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {}
+  }
+]
