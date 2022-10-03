@@ -20,8 +20,6 @@ signal dialogue_signal(command)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	start_dialogue("res://content/dialogue/Chapter2P2.json")
-	handle_current_node()
 	pass # Replace with function body.
 
 func change_box_style(new_style):
@@ -99,6 +97,7 @@ func start_dialogue(json_path):
 	load_data(json_path)
 	current_node = find_start()
 	auto_next()
+	handle_current_node()
 	
 func on_choice_selected(choice_index):
 	current_node = get_dialogue_node_by_id(current_node["choices"][choice_index]["next"])
