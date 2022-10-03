@@ -12,6 +12,8 @@ onready var blip_timers_node = get_node("BlipTimers")
 onready var proceed_indicator = get_node("BoxPanel/ProceedIndicator")
 onready var proceed_indicator_timer = get_node("BoxPanel/ProceedIndicator/Timer")
 
+var _animation_duration_per_char = 0.014
+
 var _play_blips = false
 
 signal reading_finished
@@ -36,6 +38,10 @@ func _get_text():
 
 func _set_display_name(new_val):
 	character_name.text = new_val
+	
+	if blip_timers_node.has_node("Timer" + new_val):
+		var blip_timer_node = blip_timers_node.get_node("Timer" + new_val)
+		_animation_duration_per_char = blip_timer_node.animation_duration_per_char
 
 func _get_display_name():
 	return character_name.text
@@ -52,7 +58,7 @@ func _on_ProceedIndicator_switch():
 func _animate_dialogue_text():
 	tween.stop_all()
 	tween.reset_all()
-	tween.interpolate_property(dialogue_text, "percent_visible", 0.0, 1.0, len(self.text) * 0.01)
+	tween.interpolate_property(dialogue_text, "percent_visible", 0.0, 1.0, len(self.text) *_animation_duration_per_char)
 	_play_blips = true
 	tween.start()
 

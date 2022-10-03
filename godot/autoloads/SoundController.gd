@@ -1,7 +1,7 @@
 extends Node
 
-const MUSIC_LAYERS: int = 3
-const EFFECT_LAYERS: int = 10
+const MUSIC_LAYERS: int = 1
+const EFFECT_LAYERS: int = 20
 var _effect: Array = []
 var _music: Array = []
 onready var _tween: Tween = null
@@ -21,7 +21,7 @@ func _ready() -> void:
 	
 	for i in range(EFFECT_LAYERS):
 		_effect.append(AudioStreamPlayer.new())
-		_effect[i].volume_db =  linear2db(Globals.effect_volume)
+		_effect[i].volume_db = linear2db(Globals.effect_volume)
 		_effect[i].bus = str("SFX",i)
 		add_child(_effect[i])
 
@@ -63,9 +63,11 @@ func set_effect_volume(channel: int, volume : float = -1):
 		
 	_effect[channel].volume_db = linear2db(volume)
 
-var effect_channel_idx = 0
+var effect_channel_idx = -1
 
 func play_effect(filename: String, pitch_scale : float = 1, volume : float = -1) -> void:
+	effect_channel_idx += 1
+	
 	if volume < 0:
 		volume = Globals.effect_volume
 	
@@ -80,8 +82,6 @@ func play_effect(filename: String, pitch_scale : float = 1, volume : float = -1)
 	_effect[effect_channel_idx].stop()
 	_effect[effect_channel_idx].stream = stream
 	_effect[effect_channel_idx].play()
-	
-	effect_channel_idx += 1
 
 
 func stop_music()-> void:

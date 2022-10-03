@@ -61,7 +61,13 @@ func load_data(json_path):
 	json_data = parse_json(file.get_as_text())
 	file.close()
 	
-	local = json_data[0]["variables"]
+	# Copy variables
+	for variable in json_data[0]["variables"]:
+		local[variable] = json_data[0]["variables"][variable]["value"]
+	
+	# Overwritten known flags with their real value
+	for flag in Globals.flags:
+		local[flag] = Globals.flags[flag]
 	
 func get_dialogue_node_by_id(id):
 	for node in json_data[0]["nodes"]:
@@ -77,17 +83,17 @@ func set_local_var():
 	var var_name = current_node["var_name"]
 	
 	if current_node["operation_type"] == "ADD":
-		local[var_name]["value"] += current_node["value"]
+		local[var_name]+= current_node["value"]
 	if current_node["operation_type"] == "SUBSTRACT":
-		local[var_name]["value"] -= current_node["value"]
+		local[var_name] -= current_node["value"]
 	if current_node["operation_type"] == "SET":
-		local[var_name]["value"] = current_node["value"]
+		local[var_name] = current_node["value"]
 	
 	auto_next()
 	handle_current_node()
 
 func get_var(var_name):
-	return local[var_name]["value"]
+	return local[var_name]
 
 func start_dialogue(json_path):
 	load_data(json_path)
@@ -119,9 +125,9 @@ func show_message():
 		narrator_stage.text = current_node["text"]["ENG"]
 	else:
 		change_box_style("Dialogue")
-		
+
+		dialogue_box.display_name = current_node["character"][0]		
 		dialogue_box.text = current_node["text"]["ENG"]
-		dialogue_box.display_name = current_node["character"][0]
 
 func auto_next():
 	if current_node and current_node.has("next"):
@@ -182,7 +188,7 @@ func evaluate_value(condition : String):
 	var comparator : String = parts[1]
 	var value : String = parts[2]
 	
-	var var_value = str(local[var_name]["value"])
+	var var_value = str(local[var_name])
 	
 	match comparator:
 		"==": # Equality comparisions

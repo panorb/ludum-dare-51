@@ -85,16 +85,17 @@ process_mode = 0
 wait_time = 0.3
 autostart = true
 script = ExtResource( 4 )
+animation_duration_per_char = 0.008
 
 [node name="TimerPorkus" type="Timer" parent="BlipTimers"]
 process_mode = 0
 wait_time = 0.6
 autostart = true
 script = ExtResource( 4 )
+animation_duration_per_char = 0.016
 
 [node name="TimerAlex" type="Timer" parent="BlipTimers"]
 process_mode = 0
 wait_time = 0.45
 autostart = true
 script = ExtResource( 4 )
-pitch_scale = 3.0
