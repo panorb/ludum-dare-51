@@ -8,8 +8,8 @@ onready var alex = get_node("Alex")
 onready var david = get_node("David")
 onready var gandalf = get_node("Gandalf")
 onready var porkus = get_node("Porkus")
-onready var female_ninja = get_node("FemaleNinja")
-onready var male_ninja = get_node("MaleNinja")
+onready var lilith = get_node("Lilith")
+onready var aelrin = get_node("Aelrin")
 onready var dracula = get_node("Dracula")
 
 onready var health_bar_alex = get_node("Control/HealthBarAlex")
@@ -42,11 +42,11 @@ func calculate_supporter_count():
 	if Globals.flags["PorkusPresent"]:
 		list_supporters.append(porkus)
 		number_of_supporter += 1
-	if Globals.flags["FemaleNinjaPresent"]:
-		list_supporters.append(female_ninja)
+	if Globals.flags["LilithPresent"]:
+		list_supporters.append(lilith)
 		number_of_supporter += 1
-	if Globals.flags["MaleNinjaPresent"]:
-		list_supporters.append(male_ninja)
+	if Globals.flags["AelrinPresent"]:
+		list_supporters.append(aelrin)
 		number_of_supporter += 1
 	if Globals.flags["DraculaPresent"]:
 		list_supporters.append(dracula)
@@ -67,11 +67,11 @@ func init_positions():
 	if Globals.flags["PorkusPresent"]:
 		porkus.position = position_left_up + (count * Vector2(0,48))
 		count += 1
-	if Globals.flags["FemaleNinjaPresent"]:
-		female_ninja.position = position_left_up + (count * Vector2(0,48))
+	if Globals.flags["LilithPresent"]:
+		lilith.position = position_left_up + (count * Vector2(0,48))
 		count += 1
-	if Globals.flags["MaleNinjaPresent"]:
-		male_ninja.position = position_left_up + (count * Vector2(0,48))
+	if Globals.flags["AelrinPresent"]:
+		aelrin.position = position_left_up + (count * Vector2(0,48))
 		count += 1
 	if Globals.flags["DraculaPresent"]:
 		dracula.position = position_left_up + (count * Vector2(0,48))

@@ -1,0 +1,110 @@
+Location: Ninja Village
+Characters:
+Female Ninja Lilith
+    watches over cattle
+
+Male Ninja Aelrin
+    thinks that Lilith neglected cattle since it looks malnourished from the vampire's feasts
+
+Narrator:
+    You enter the village inhabited by ninjas.
+    It is exactly as Drakula described, rivers flowing through huts with curved, crimson-red roofs.
+    You would love to stay in this idyllic place, but the realization of your duty snaps you back into reality.
+    Past a few houses you hear a two of the inhabitants arguing.
+    A man blames a woman for neglecting their livestock.
+Aelrin:
+    Just look at them! How is it not clear that something is wrong with our cattle?
+Narrator:
+    The woman stays silent, you can tell she had cried.
+    As you approach them, she quickly wipes her tears off.
+Lilith:
+    Who are you? W.. What are you doing here?
+Aelrin:
+    Don't try and distract from your shortcomings!
+    You know we rely on these animals.
+Lilith:
+    I swear I don't know why they are like this...
+    Do you think I haven't poured my heart into caring for these animals?
+    Seeing them falling ill one by one breaks my heart...
+    And you left me for this? When I needed you most?
+Narrator:
+    You wait for two to finish arguing.
+Alex:
+    Actually, we are here to inquire for help.
+    Life as we know it is at risk. Soon your issues will be null in comparison for what's to come.
+Narrator:
+    As you tell them about the incoming danger, you see Drakula acting uneasy.
+    His stomach is growling and he's eyeing the cattle.
+    You realize what was going on, but you have to stop him now.
+QTE: Stop Drakula without drawing attention to yourself
+    success:
+        Narrator:
+            You successfully hold him back.
+            The ex-lovers listen carefully and haven't noticed a thing.
+        Aelrin:
+            Of course I will help! At least someone should be able to care for these people.
+        Narrator:
+            He shoots Lilith a nasty look.
+        Lilith:
+            If he's set on coming with you, there's no way I will come with!
+            Your loss. His blunt blade won't compare to my skills.
+        Aelrin:
+            Have you forgotten who taught you to throw your shuriken?
+            You would be nothing without me!
+        Lilith:
+            You're right! And because you left me, every day feels emptier than the last.
+        Narrator:
+            You feel the need to clear up the misunderstanding that is only obvious to you and your companions.
+            Just as you began to raise your voice, realization struck you.
+            You need their help to fuel the fight, to raise the odds just ever so slightly.
+            If you were honest, they might choose to rebuild their relationship.
+            You know all too well that you can't expect them to fight two heart-wrenching battles at once.
+        Choice:
+            1 Tell the truth and leave them behind.
+            2 Keep the lie going for a little longer.
+        1
+            Narrator:
+                You decide not to involve them in the fight.
+                As you explain the matters, Drakula profusely apologizing...
+                their faces reflect a mixture of relief and regret.
+                They fall into each others arms, and you feel like they need some time alone.
+            --> Ende ohne Ninjas
+        2
+            Narrator:
+                You decide that there will be plenty opportunities for this storm to clear up after the time thief's threat is banned from this world.
+            Alex:
+                We need your help, now more than ever.
+            Aelrin:
+                Then let's go!
+            Lilith:
+                Wait a minute! He hasn't even told us who would be going with them.
+            Aelrin:
+                Well it's either you or me, that's for sure. Now, Alex?
+            Choice:
+                1 Aelrin
+                2 Lilith
+            1
+                Aelrin:
+                    I will not disappoint you. Dire times require strong fighters.
+                Narrator:
+                    You leave the village with Aelrin's blade having your back.
+            2
+                Narrator:
+                    With a smug face, Lilith turns her back towards Aelrin and follows you.
+                Lilith:
+                    I needed this so much. I don't even care anymore, I have found my calling.
+                Narrator:
+                    You have a creeping suspicion that she cares more than she allows herself to say.
+                    Regardless, the path ahead will be accompanied with the precise strikes of Lilith's throwing stars.
+    fail:
+        Aelrin:
+            What is he doing? Stop this guy!
+        Narrator:
+            It did not take them very long at all to catch onto the truth.
+        Lilith:
+            I knew there was more at play! Stop this monstrocity!
+        Narrator:
+            Their blades and throwing stars combined had almost cost you your life...
+            but you all manage to escape their righteous fury.
+            You begin to think that they should have learned the truth another way.
+            But there is no going back.

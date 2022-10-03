@@ -22,6 +22,7 @@ func _process(delta):
 			
 			if progress_bar.value <= 0:
 				current_prompt_idx = -1
+				SoundController.stop_music(2)
 				emit_signal("qte_timeout")
 
 
@@ -40,7 +41,7 @@ func _set_sequence(new_val):
 	
 	current_prompt_idx = 0
 	prompts_node.get_child(0).highlight()
-	SoundController.play_music("ticking.wav", 1)
+	SoundController.play_music("ticking.wav", 2)
 
 func _input(event):
 	if current_prompt_idx >= 0 and event.is_action_pressed(sequence[current_prompt_idx]):
@@ -50,5 +51,5 @@ func _input(event):
 			prompts_node.get_child(current_prompt_idx + 1).highlight()
 			current_prompt_idx += 1
 		else:
-			SoundController.stop_music(1)
+			SoundController.stop_music(2)
 			emit_signal("qte_success")

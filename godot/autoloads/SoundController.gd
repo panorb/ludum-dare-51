@@ -1,6 +1,6 @@
 extends Node
 
-const MUSIC_LAYERS: int = 2
+const MUSIC_LAYERS: int = 3
 const EFFECT_LAYERS: int = 20
 var _effect: Array = []
 var _music: Array = []
@@ -39,6 +39,15 @@ func play_music(filename: String, channel: int = 0, \
 	_music[channel].volume_db = linear2db(volume)
 	_music[channel].stop()
 	_music[channel].stream = stream
+	_music[channel].play()
+	_loop=should_loop
+
+func load_music(filename: String, channel: int = 0):
+	var path = "res://sounds/" + filename
+	var stream = load(path)
+	_music[channel].stream = stream
+
+func play_channel(channel: int = 0, should_loop: bool = true):
 	_music[channel].play()
 	_loop=should_loop
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Start_the_clock_alternate_version.mp3-1367726181b1ac345a65f4081cd4971e.mp3str"
+
+[deps]
+
+source_file="res://sounds/Start_the_clock_alternate_version.mp3"
+dest_files=[ "res://.import/Start_the_clock_alternate_version.mp3-1367726181b1ac345a65f4081cd4971e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

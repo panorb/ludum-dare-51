@@ -18,6 +18,8 @@ onready var choice_box : Control = get_node("ChoiceBox")
 onready var narrator_stage : Control = get_node("NarratorStage")
 onready var qte_sequence : Control = get_node("QTESequence")
 
+var list_of_next = []
+
 signal dialogue_signal(command)
 signal dialogue_finished
 
@@ -89,11 +91,11 @@ func set_local_var():
 	
 	if current_node["operation_type"] == "ADD":
 		local[var_name] += current_node["value"]
-	if current_node["operation_type"] == "SUBSTRACT":
+	elif current_node["operation_type"] == "SUBSTRACT":
 		local[var_name] -= current_node["value"]
-	if current_node["operation_type"] == "SET":
+	elif current_node["operation_type"] == "SET":
 		local[var_name] = current_node["value"]
-	if current_node.has("toggle"):
+	elif current_node.has("toggle"):
 		local[var_name] = current_node["value"]
 	
 	auto_next()
@@ -109,7 +111,7 @@ func start_dialogue(json_path):
 	handle_current_node()
 	
 func _on_choice_selected(choice_index):
-	current_node = get_dialogue_node_by_id(current_node["choices"][choice_index]["next"])
+	current_node = get_dialogue_node_by_id(list_of_next[choice_index])
 	handle_current_node()
 	
 func _on_reading_finished():
@@ -127,13 +129,14 @@ func _on_qte_result(result):
 func show_message():
 	if current_node["character"][0] == "Player":
 		change_box_style("Choice")
-		
-		choice_box.question = current_node["text"]["ENG"]
 		var tmp = []
+		list_of_next.clear()
+		choice_box.question = current_node["text"]["ENG"]
 		for i in range(len(current_node["choices"])):
 			if not current_node["choices"][i]["is_condition"] or \
 			 evaluate_complex_condition(current_node["choices"][i]["condition"]):
 				tmp.append(current_node["choices"][i]["text"]["ENG"])
+				list_of_next.append(current_node["choices"][i]["next"])
 		choice_box.choices = tmp
 	elif current_node["character"][0] == "Narrator":
 		change_box_style("Stage")
@@ -212,13 +215,28 @@ func condition_branch():
 func evaluate_complex_condition(condition : String):
 	var parts : PoolStringArray = condition.split(" ")
 	
-	var result = evaluate_value(" ".join([parts[0], parts[1], parts[2]]))
+	var checked = false
+	while !checked:
+		var tmp = parts.find("")
+		if tmp != -1:
+			parts.remove(tmp)
+		else:
+			checked = true
 	
-	for connecter_idx in range(3, len(parts), 4):
-		if parts[connecter_idx] == "or":
-			result = result or evaluate_value(" ".join([parts[connecter_idx + 1], parts[connecter_idx + 2], parts[connecter_idx + 3]]))
-		elif parts[connecter_idx] == "and":
-			result = result and evaluate_value(" ".join([parts[connecter_idx + 1], parts[connecter_idx + 2], parts[connecter_idx + 3]]))
+	var result = evaluate_value(" ".join([parts[0], parts[1], parts[2]]))
+	parts.remove(0)
+	parts.remove(0)
+	parts.remove(0)
+	
+	while parts:
+		if parts[0] == "or":
+			result = result or evaluate_value(" ".join([parts[1], parts[2], parts[3]]))
+		elif parts[0] == "and":
+			result = result and evaluate_value(" ".join([parts[1], parts[2], parts[3]]))
+		parts.remove(0)
+		parts.remove(0)
+		parts.remove(0)
+		parts.remove(0)
 		
 	return result
 
@@ -228,8 +246,9 @@ func evaluate_value(condition : String):
 	var comparator : String = parts[1]
 	var value : String = parts[2]
 	
-	var var_value = str(local[var_name])
+	#print("Var_Name: ", var_name, " Comparator: ", comparator, " Value: ", value)
 	
+	var var_value = str(local[var_name])
 	match comparator:
 		"==": # Equality comparisions
 			return var_value.to_lower() == value.to_lower()

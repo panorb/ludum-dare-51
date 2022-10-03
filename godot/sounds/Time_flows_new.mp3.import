@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Time_flows_new.mp3-236d210d8185debc87a5485b31babf02.mp3str"
+
+[deps]
+
+source_file="res://sounds/Time_flows_new.mp3"
+dest_files=[ "res://.import/Time_flows_new.mp3-236d210d8185debc87a5485b31babf02.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

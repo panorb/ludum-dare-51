@@ -6,8 +6,8 @@ onready var alex = get_node("PositioningHeros/Alex")
 onready var david = get_node("PositioningHeros/David")
 onready var gandalf = get_node("PositioningHeros/Gandalf")
 onready var porkus = get_node("PositioningHeros/Porkus")
-onready var female_ninja = get_node("PositioningHeros/FemaleNinja")
-onready var male_ninja = get_node("PositioningHeros/MaleNinja")
+onready var lilith = get_node("PositioningHeros/Lilith")
+onready var aelrin = get_node("PositioningHeros/Aelrin")
 onready var dracula = get_node("PositioningHeros/Dracula")
 onready var time_stealer = get_node("PositioningBoss/Time Stealer")
 
@@ -23,10 +23,10 @@ func _ready():
 		list_supporters.append(gandalf)
 	if Globals.flags["PorkusPresent"]:
 		list_supporters.append(porkus)	
-	if Globals.flags["FemaleNinjaPresent"]:
-		list_supporters.append(female_ninja)
-	if Globals.flags["MaleNinjaPresent"]:
-		list_supporters.append(male_ninja)
+	if Globals.flags["LilithPresent"]:
+		list_supporters.append(lilith)
+	if Globals.flags["AelrinPresent"]:
+		list_supporters.append(aelrin)
 	if Globals.flags["DraculaPresent"]:
 		list_supporters.append(dracula)
 	pass

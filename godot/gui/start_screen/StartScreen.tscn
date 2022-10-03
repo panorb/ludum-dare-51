@@ -1,82 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://gui/main_theme.tres" type="Theme" id=1]
-[ext_resource path="res://gui/start_screen/develop_screen.png" type="Texture" id=2]
 [ext_resource path="res://gui/start_screen/StartScreen.gd" type="Script" id=3]
-
-[sub_resource type="Animation" id=4]
-resource_name = "Fade In Buttons"
-tracks/0/type = "value"
-tracks/0/path = NodePath("../ColorRect2:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
-}
-
-[sub_resource type="Animation" id=1]
-resource_name = "Fade Out"
-length = 0.8
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 1 ) ]
-}
-
-[sub_resource type="Animation" id=2]
-resource_name = "Fade in"
-length = 1.8
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
-}
-
-[sub_resource type="Animation" id=3]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:color")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 1 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("../ColorRect2:color")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Color( 0, 0, 0, 1 ) ]
-}
 
 [node name="StartScreen" type="Control"]
 anchor_left = 0.5
@@ -90,25 +15,6 @@ margin_bottom = 135.0
 theme = ExtResource( 1 )
 script = ExtResource( 3 )
 
-[node name="DevelopScreen" type="Sprite" parent="."]
-position = Vector2( 240, 135 )
-scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 2 )
-
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -20.0
-margin_top = -5.0
-margin_right = 507.0
-margin_bottom = 279.0
-color = Color( 0, 0, 0, 1 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../ColorRect")
-"anims/Fade In Buttons" = SubResource( 4 )
-"anims/Fade Out" = SubResource( 1 )
-"anims/Fade in" = SubResource( 2 )
-anims/RESET = SubResource( 3 )
-
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -121,38 +27,24 @@ margin_bottom = 54.0
 alignment = 1
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_top = 14.0
 margin_right = 80.0
-margin_bottom = 38.0
+margin_bottom = 24.0
 text = "Start"
 
 [node name="OptionButton" type="Button" parent="VBoxContainer"]
-visible = false
 margin_top = 28.0
 margin_right = 80.0
 margin_bottom = 52.0
 text = "Options"
 
 [node name="CreditButton" type="Button" parent="VBoxContainer"]
-margin_top = 42.0
+margin_top = 56.0
 margin_right = 80.0
-margin_bottom = 66.0
+margin_bottom = 80.0
 text = "Credits"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 70.0
+margin_top = 84.0
 margin_right = 80.0
-margin_bottom = 94.0
+margin_bottom = 108.0
 text = "Quit"
-
-[node name="ColorRect2" type="ColorRect" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -45.5
-margin_top = -57.5
-margin_right = 45.5
-margin_bottom = 57.5
-mouse_filter = 2
-color = Color( 0, 0, 0, 1 )
