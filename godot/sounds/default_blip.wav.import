@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/beep.wav-ccae48e5c3b35f31302f7c633b28e6d2.sample"
+path="res://.import/default_blip.wav-d3e1550b1c138c7b266e58311414759d.sample"
 
 [deps]
 
-source_file="res://gui/dialogue/beep.wav"
-dest_files=[ "res://.import/beep.wav-ccae48e5c3b35f31302f7c633b28e6d2.sample" ]
+source_file="res://sounds/default_blip.wav"
+dest_files=[ "res://.import/default_blip.wav-d3e1550b1c138c7b266e58311414759d.sample" ]
 
 [params]
 

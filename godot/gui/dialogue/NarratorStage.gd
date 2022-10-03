@@ -2,8 +2,6 @@ extends Control
 
 var text : String setget _set_text, _get_text
 
-var need_to_wait : bool setget _set_need_to_wait
-
 onready var dialogue_text = get_node("%DialogueText")
 
 onready var tween = get_node("Tween")
@@ -19,23 +17,15 @@ func _set_text(new_val):
 
 func _get_text():
 	return dialogue_text.text
-	
-func _set_need_to_wait(new_val):
-	need_to_wait = new_val
 
 func _input(event):
 	if event.is_action_pressed("option_select"):
 		print("enter")
 		emit_signal("reading_finished")
 
-func _on_tween_all_completed():
-	need_to_wait = false
 
 func _ready():
-	need_to_wait = false
-	yield(get_tree().create_timer(1.0), "timeout")
 	proceed_indicator_timer.connect("timeout", self, "_on_ProceedIndicator_switch")
-	tween.connect("tween_all_completed", self, "_on_tween_all_completed")
 
 func _on_ProceedIndicator_switch():
 	proceed_indicator.visible = dialogue_text.percent_visible == 1.0 and not proceed_indicator.visible
