@@ -1,0 +1,989 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Narrator",
+      "Alex",
+      "David",
+      "Porkus"
+    ],
+    "connections": [
+      {
+        "from": "6014120",
+        "from_port": 0,
+        "to": "6408676",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "6014120",
+        "to_port": 0
+      },
+      {
+        "from": "6408676",
+        "from_port": 0,
+        "to": "9571451",
+        "to_port": 0
+      },
+      {
+        "from": "9571451",
+        "from_port": 0,
+        "to": "3597124",
+        "to_port": 0
+      },
+      {
+        "from": "3597124",
+        "from_port": 0,
+        "to": "6225639",
+        "to_port": 0
+      },
+      {
+        "from": "6225639",
+        "from_port": 0,
+        "to": "2269892",
+        "to_port": 0
+      },
+      {
+        "from": "2269892",
+        "from_port": 0,
+        "to": "3719752",
+        "to_port": 0
+      },
+      {
+        "from": "3719752",
+        "from_port": 0,
+        "to": "1363239",
+        "to_port": 0
+      },
+      {
+        "from": "1363239",
+        "from_port": 0,
+        "to": "8229116",
+        "to_port": 0
+      },
+      {
+        "from": "2747006",
+        "from_port": 0,
+        "to": "9324587",
+        "to_port": 0
+      },
+      {
+        "from": "9324587",
+        "from_port": 0,
+        "to": "445235",
+        "to_port": 0
+      },
+      {
+        "from": "445235",
+        "from_port": 0,
+        "to": "8229116",
+        "to_port": 0
+      },
+      {
+        "from": "8229116",
+        "from_port": 0,
+        "to": "8621773",
+        "to_port": 0
+      },
+      {
+        "from": "8621773",
+        "from_port": 1,
+        "to": "2747006",
+        "to_port": 0
+      },
+      {
+        "from": "8621773",
+        "from_port": 0,
+        "to": "972530",
+        "to_port": 0
+      },
+      {
+        "from": "972530",
+        "from_port": 0,
+        "to": "8229116",
+        "to_port": 0
+      },
+      {
+        "from": "8229116",
+        "from_port": 1,
+        "to": "434216",
+        "to_port": 0
+      },
+      {
+        "from": "434216",
+        "from_port": 0,
+        "to": "7130839",
+        "to_port": 0
+      },
+      {
+        "from": "7130839",
+        "from_port": 0,
+        "to": "5596610",
+        "to_port": 0
+      },
+      {
+        "from": "5596610",
+        "from_port": 0,
+        "to": "2536657",
+        "to_port": 0
+      },
+      {
+        "from": "2536657",
+        "from_port": 0,
+        "to": "9576635",
+        "to_port": 0
+      },
+      {
+        "from": "9576635",
+        "from_port": 0,
+        "to": "5755708",
+        "to_port": 0
+      },
+      {
+        "from": "5031962",
+        "from_port": 0,
+        "to": "2238327",
+        "to_port": 0
+      },
+      {
+        "from": "2238327",
+        "from_port": 0,
+        "to": "7130839",
+        "to_port": 0
+      },
+      {
+        "from": "8229116",
+        "from_port": 2,
+        "to": "5031962",
+        "to_port": 0
+      },
+      {
+        "from": "8229116",
+        "from_port": 3,
+        "to": "5284810",
+        "to_port": 0
+      },
+      {
+        "from": "5284810",
+        "from_port": 0,
+        "to": "5476785",
+        "to_port": 0
+      },
+      {
+        "from": "5476785",
+        "from_port": 0,
+        "to": "3039668",
+        "to_port": 0
+      },
+      {
+        "from": "3039668",
+        "from_port": 0,
+        "to": "5776430",
+        "to_port": 0
+      },
+      {
+        "from": "5776430",
+        "from_port": 0,
+        "to": "7130839",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.4",
+    "file_name": "Chapter2P2",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6408676",
+        "node_name": "6014120",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -475,
+          -830
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The rather improvised entrance led to some kind of industrial district of the city."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9571451",
+        "node_name": "6408676",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          0,
+          -835
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The tunnels, arches, fixtures on the walls all looked the same to an outsider."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "6014120",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -685,
+          -705
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3597124",
+        "node_name": "9571451",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          435,
+          -835
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "No other sensations than seeing seemed to exist. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6225639",
+        "node_name": "3597124",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          865,
+          -840
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "No sound was heard"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2269892",
+        "node_name": "6225639",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1305,
+          -850
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "No smells caressed   the Nose."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3719752",
+        "node_name": "2269892",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1750,
+          -850
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Even the alchemical lamps on the walls didnt flicker, but emitted a constant glow."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1363239",
+        "node_name": "3719752",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2195,
+          -855
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "After a short stroll through the labyrinthian complex of workshops, store and tunnels...."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "8621773",
+            "text": {
+              "ENG": "Stare into the abyss"
+            }
+          },
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "434216",
+            "text": {
+              "ENG": "Walk into the darkness"
+            }
+          },
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "5031962",
+            "text": {
+              "ENG": "Look for another way"
+            }
+          },
+          {
+            "condition": "DavidPresent == true",
+            "is_condition": true,
+            "next": "5284810",
+            "text": {
+              "ENG": "Have david shoot a stone into the tunnel"
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "8229116",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          15,
+          -500
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "So what will it be?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8229116",
+        "node_name": "1363239",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -485,
+          -500
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "...our hero reaches a tunnel without lamps. Abyss like darkness seems to be the tunnels main attribute."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9324587",
+        "node_name": "2747006",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -465,
+          5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The abyss doesnt stare back at you......."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "445235",
+        "node_name": "9324587",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          35,
+          0
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": ".........it just exists......."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8229116",
+        "node_name": "445235",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          480,
+          5
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "............menacingly..............."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": null,
+        "node_name": "4900848",
+        "node_type": "start",
+        "offset": [
+          -1415,
+          -265
+        ],
+        "title": ""
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": null,
+        "node_name": "5114086",
+        "node_type": "start",
+        "offset": [
+          -1625,
+          -175
+        ],
+        "title": ""
+      },
+      {
+        "branches": {
+          "1": "972530",
+          "2": "2747006"
+        },
+        "chance_1": 5,
+        "chance_2": 95,
+        "filename": "res://Nodes/Chance Branch.tscn",
+        "node_name": "8621773",
+        "node_type": "chance_branch",
+        "offset": [
+          785,
+          -295
+        ],
+        "title": "Chance Branch"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8229116",
+        "node_name": "972530",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -480,
+          380
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "No! Now is not the right time for experiments. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7130839",
+        "node_name": "434216",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -490,
+          710
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Our protagonist bravely walks into the tunnel. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Porkus",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2536657",
+        "node_name": "5596610",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1290,
+          1355
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh, by the snout of yurguthz! Finally someone who is normal.... Or something like that."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9576635",
+        "node_name": "2536657",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1740,
+          1345
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Alex follows the voice until he reaches the end of the tunnel and with it some light."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5755708",
+        "node_name": "9576635",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2190,
+          1350
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The dwarf who now stood before Alex had the characteristic pig-like nose of his people. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": null,
+        "node_name": "5755708",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2625,
+          1350
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "He was stocky and carried a stereotypical axe in his hands."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2238327",
+        "node_name": "5031962",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -465,
+          1040
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Our protagonist cautiously seeks another path. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7130839",
+        "node_name": "2238327",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          0,
+          1045
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "After wandering through the labyrinth for an eternity, Alex starts to lose hope and just shouts...."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5476785",
+        "node_name": "5284810",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          745,
+          875
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Im gonna kick that tunnels butt....You´ll see."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5596610",
+        "node_name": "7130839",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          820,
+          1360
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Is anybody there? "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Porkus",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5776430",
+        "node_name": "3039668",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1620,
+          875
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "OUCH! WHAT THE HELL!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3039668",
+        "node_name": "5476785",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1185,
+          875
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The Boy slings a pebble into the darkness."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7130839",
+        "node_name": "5776430",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2070,
+          875
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Uhhhm....."
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "DavidPresent": {
+        "type": 2,
+        "value": false
+      }
+    }
+  }
+]
