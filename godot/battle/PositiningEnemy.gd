@@ -4,7 +4,7 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-onready var time_stealer = get_node("Time Stealer")
+onready var time_stealer = get_node("TimeStealer")
 onready var health_bar_time_stealer = get_node("Control/HealthBarTimeStealer")
 
 var position_left_up : Vector2 = Vector2(24,48)

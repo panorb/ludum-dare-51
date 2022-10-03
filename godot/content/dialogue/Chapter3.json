@@ -1,0 +1,2861 @@
+[
+  {
+    "characters": [
+      "Player",
+      "Narrator",
+      "Alex",
+      "David",
+      "Drakula",
+      "Gandalf",
+      "Porkus"
+    ],
+    "connections": [
+      {
+        "from": "7810946",
+        "from_port": 0,
+        "to": "7614092",
+        "to_port": 0
+      },
+      {
+        "from": "7614092",
+        "from_port": 0,
+        "to": "5152469",
+        "to_port": 0
+      },
+      {
+        "from": "5152469",
+        "from_port": 0,
+        "to": "9271746",
+        "to_port": 0
+      },
+      {
+        "from": "9271746",
+        "from_port": 0,
+        "to": "511283",
+        "to_port": 0
+      },
+      {
+        "from": "511283",
+        "from_port": 0,
+        "to": "5637402",
+        "to_port": 0
+      },
+      {
+        "from": "5637402",
+        "from_port": 0,
+        "to": "4658760",
+        "to_port": 0
+      },
+      {
+        "from": "2585412",
+        "from_port": 0,
+        "to": "4243993",
+        "to_port": 0
+      },
+      {
+        "from": "2585412",
+        "from_port": 1,
+        "to": "5140185",
+        "to_port": 0
+      },
+      {
+        "from": "4243993",
+        "from_port": 0,
+        "to": "7788312",
+        "to_port": 0
+      },
+      {
+        "from": "7788312",
+        "from_port": 0,
+        "to": "5530738",
+        "to_port": 0
+      },
+      {
+        "from": "5530738",
+        "from_port": 0,
+        "to": "556310",
+        "to_port": 0
+      },
+      {
+        "from": "556310",
+        "from_port": 0,
+        "to": "7949511",
+        "to_port": 0
+      },
+      {
+        "from": "7949511",
+        "from_port": 0,
+        "to": "8397027",
+        "to_port": 0
+      },
+      {
+        "from": "8397027",
+        "from_port": 0,
+        "to": "2371446",
+        "to_port": 0
+      },
+      {
+        "from": "6684157",
+        "from_port": 0,
+        "to": "9703207",
+        "to_port": 0
+      },
+      {
+        "from": "2371446",
+        "from_port": 0,
+        "to": "6684157",
+        "to_port": 0
+      },
+      {
+        "from": "9703207",
+        "from_port": 0,
+        "to": "5469402",
+        "to_port": 0
+      },
+      {
+        "from": "5469402",
+        "from_port": 0,
+        "to": "1602158",
+        "to_port": 0
+      },
+      {
+        "from": "9703207",
+        "from_port": 1,
+        "to": "1602158",
+        "to_port": 0
+      },
+      {
+        "from": "7788312",
+        "from_port": 1,
+        "to": "1602158",
+        "to_port": 0
+      },
+      {
+        "from": "2371446",
+        "from_port": 1,
+        "to": "2357410",
+        "to_port": 0
+      },
+      {
+        "from": "1602158",
+        "from_port": 0,
+        "to": "8898659",
+        "to_port": 0
+      },
+      {
+        "from": "8898659",
+        "from_port": 0,
+        "to": "476153",
+        "to_port": 0
+      },
+      {
+        "from": "476153",
+        "from_port": 0,
+        "to": "16653",
+        "to_port": 0
+      },
+      {
+        "from": "16653",
+        "from_port": 0,
+        "to": "618583",
+        "to_port": 0
+      },
+      {
+        "from": "618583",
+        "from_port": 0,
+        "to": "8943980",
+        "to_port": 0
+      },
+      {
+        "from": "8943980",
+        "from_port": 0,
+        "to": "8364137",
+        "to_port": 0
+      },
+      {
+        "from": "8364137",
+        "from_port": 0,
+        "to": "3733310",
+        "to_port": 0
+      },
+      {
+        "from": "3733310",
+        "from_port": 0,
+        "to": "1978620",
+        "to_port": 0
+      },
+      {
+        "from": "3733310",
+        "from_port": 1,
+        "to": "5866571",
+        "to_port": 0
+      },
+      {
+        "from": "1978620",
+        "from_port": 0,
+        "to": "752797",
+        "to_port": 0
+      },
+      {
+        "from": "5866571",
+        "from_port": 0,
+        "to": "752797",
+        "to_port": 0
+      },
+      {
+        "from": "752797",
+        "from_port": 0,
+        "to": "7807682",
+        "to_port": 0
+      },
+      {
+        "from": "7807682",
+        "from_port": 0,
+        "to": "1057489",
+        "to_port": 0
+      },
+      {
+        "from": "1057489",
+        "from_port": 0,
+        "to": "1136431",
+        "to_port": 0
+      },
+      {
+        "from": "1136431",
+        "from_port": 0,
+        "to": "5816895",
+        "to_port": 0
+      },
+      {
+        "from": "5816895",
+        "from_port": 0,
+        "to": "5659497",
+        "to_port": 0
+      },
+      {
+        "from": "5659497",
+        "from_port": 0,
+        "to": "1162906",
+        "to_port": 0
+      },
+      {
+        "from": "1162906",
+        "from_port": 0,
+        "to": "4126608",
+        "to_port": 0
+      },
+      {
+        "from": "4126608",
+        "from_port": 1,
+        "to": "4114313",
+        "to_port": 0
+      },
+      {
+        "from": "4114313",
+        "from_port": 0,
+        "to": "40646",
+        "to_port": 0
+      },
+      {
+        "from": "40646",
+        "from_port": 0,
+        "to": "7237952",
+        "to_port": 0
+      },
+      {
+        "from": "7237952",
+        "from_port": 0,
+        "to": "3937031",
+        "to_port": 0
+      },
+      {
+        "from": "4126608",
+        "from_port": 0,
+        "to": "9239",
+        "to_port": 0
+      },
+      {
+        "from": "9239",
+        "from_port": 0,
+        "to": "8929371",
+        "to_port": 0
+      },
+      {
+        "from": "5612065",
+        "from_port": 0,
+        "to": "8898466",
+        "to_port": 0
+      },
+      {
+        "from": "8898466",
+        "from_port": 0,
+        "to": "9398394",
+        "to_port": 0
+      },
+      {
+        "from": "8929371",
+        "from_port": 0,
+        "to": "5612065",
+        "to_port": 0
+      },
+      {
+        "from": "9398394",
+        "from_port": 0,
+        "to": "2587485",
+        "to_port": 0
+      },
+      {
+        "from": "2587485",
+        "from_port": 0,
+        "to": "6167754",
+        "to_port": 0
+      },
+      {
+        "from": "6167754",
+        "from_port": 0,
+        "to": "3537081",
+        "to_port": 0
+      },
+      {
+        "from": "3537081",
+        "from_port": 0,
+        "to": "8923250",
+        "to_port": 0
+      },
+      {
+        "from": "8923250",
+        "from_port": 0,
+        "to": "6158632",
+        "to_port": 0
+      },
+      {
+        "from": "6158632",
+        "from_port": 0,
+        "to": "716890",
+        "to_port": 0
+      },
+      {
+        "from": "716890",
+        "from_port": 0,
+        "to": "7426685",
+        "to_port": 0
+      },
+      {
+        "from": "7426685",
+        "from_port": 0,
+        "to": "9279450",
+        "to_port": 0
+      },
+      {
+        "from": "9279450",
+        "from_port": 0,
+        "to": "5072566",
+        "to_port": 0
+      },
+      {
+        "from": "5072566",
+        "from_port": 0,
+        "to": "623254",
+        "to_port": 0
+      },
+      {
+        "from": "623254",
+        "from_port": 0,
+        "to": "2642319",
+        "to_port": 0
+      },
+      {
+        "from": "2642319",
+        "from_port": 0,
+        "to": "3030840",
+        "to_port": 0
+      },
+      {
+        "from": "3030840",
+        "from_port": 0,
+        "to": "3006869",
+        "to_port": 0
+      },
+      {
+        "from": "716890",
+        "from_port": 1,
+        "to": "951195",
+        "to_port": 0
+      },
+      {
+        "from": "9543376",
+        "from_port": 0,
+        "to": "7962948",
+        "to_port": 0
+      },
+      {
+        "from": "951195",
+        "from_port": 0,
+        "to": "9543376",
+        "to_port": 0
+      },
+      {
+        "from": "7962948",
+        "from_port": 0,
+        "to": "4856164",
+        "to_port": 0
+      },
+      {
+        "from": "4856164",
+        "from_port": 0,
+        "to": "2256581",
+        "to_port": 0
+      },
+      {
+        "from": "2256581",
+        "from_port": 0,
+        "to": "7423693",
+        "to_port": 0
+      },
+      {
+        "from": "2256581",
+        "from_port": 1,
+        "to": "5072994",
+        "to_port": 0
+      },
+      {
+        "from": "7423693",
+        "from_port": 0,
+        "to": "5072994",
+        "to_port": 0
+      },
+      {
+        "from": "5072994",
+        "from_port": 0,
+        "to": "8687661",
+        "to_port": 0
+      },
+      {
+        "from": "4869413",
+        "from_port": 0,
+        "to": "966216",
+        "to_port": 0
+      },
+      {
+        "from": "8687661",
+        "from_port": 0,
+        "to": "4869413",
+        "to_port": 0
+      },
+      {
+        "from": "966216",
+        "from_port": 0,
+        "to": "9655041",
+        "to_port": 0
+      },
+      {
+        "from": "9655041",
+        "from_port": 0,
+        "to": "188561",
+        "to_port": 0
+      },
+      {
+        "from": "188561",
+        "from_port": 0,
+        "to": "1658738",
+        "to_port": 0
+      },
+      {
+        "from": "1658738",
+        "from_port": 0,
+        "to": "312243",
+        "to_port": 0
+      },
+      {
+        "from": "312243",
+        "from_port": 0,
+        "to": "6114516",
+        "to_port": 0
+      },
+      {
+        "from": "312243",
+        "from_port": 1,
+        "to": "3747949",
+        "to_port": 0
+      },
+      {
+        "from": "5544034",
+        "from_port": 0,
+        "to": "6053951",
+        "to_port": 0
+      },
+      {
+        "from": "3747949",
+        "from_port": 0,
+        "to": "5544034",
+        "to_port": 0
+      },
+      {
+        "from": "6053951",
+        "from_port": 0,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "5086137",
+        "from_port": 0,
+        "to": "4953255",
+        "to_port": 0
+      },
+      {
+        "from": "4953255",
+        "from_port": 0,
+        "to": "1602158",
+        "to_port": 0
+      },
+      {
+        "from": "3006869",
+        "from_port": 0,
+        "to": "2836493",
+        "to_port": 0
+      },
+      {
+        "from": "9279450",
+        "from_port": 1,
+        "to": "2836493",
+        "to_port": 0
+      },
+      {
+        "from": "2836493",
+        "from_port": 0,
+        "to": "7776930",
+        "to_port": 0
+      },
+      {
+        "from": "7776930",
+        "from_port": 0,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "6114516",
+        "from_port": 0,
+        "to": "1941687",
+        "to_port": 0
+      },
+      {
+        "from": "4658760",
+        "from_port": 0,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "8227143",
+        "from_port": 0,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "1941687",
+        "from_port": 0,
+        "to": "8227143",
+        "to_port": 0
+      },
+      {
+        "from": "4869413",
+        "from_port": 1,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "966216",
+        "from_port": 1,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "3937031",
+        "from_port": 0,
+        "to": "2585412",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "8024248",
+        "to_port": 0
+      },
+      {
+        "from": "8024248",
+        "from_port": 0,
+        "to": "7810946",
+        "to_port": 0
+      },
+      {
+        "from": "5140185",
+        "from_port": 0,
+        "to": "2585412",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.4",
+    "file_name": "Chapter3",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7614092",
+        "node_name": "7810946",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          170,
+          -105
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "As you come closer to the light to the end of the tunnel..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5152469",
+        "node_name": "7614092",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          640,
+          -110
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "a wide wasteland stretches from your feet to the horizon, drenched in the night sky's cold light."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9271746",
+        "node_name": "5152469",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1130,
+          -120
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Only two specks of light emit among the various buildings in front of you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "511283",
+        "node_name": "9271746",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1600,
+          -130
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Next to an abandonded village a few hundred meters ahead lies a massive mansion..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5637402",
+        "node_name": "511283",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2070,
+          -125
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "massive and silent, its windows shedding light into the darkness like judging eyes."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4658760",
+        "node_name": "5637402",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2635,
+          -110
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Further down the road there erects a tower upon a hill..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2585412",
+        "node_name": "4658760",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3140,
+          -110
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "a mysterious aura makes it clear that is indeed not abandoned."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "VisitedPlaces == 0 or VisitedPlaces == 2",
+            "is_condition": true,
+            "next": "4243993",
+            "text": {
+              "ENG": "Peek inside the villa."
+            }
+          },
+          {
+            "condition": "VisitedPlaces == 0 or VisitedPlaces == 1",
+            "is_condition": true,
+            "next": "5140185",
+            "text": {
+              "ENG": "Head up into the mysterious tower."
+            }
+          },
+          {
+            "condition": "VisitedPlaces >= 1",
+            "is_condition": true,
+            "next": null,
+            "text": {
+              "ENG": "Continue onward."
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "2585412",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          155,
+          285
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Where shall your journey take you?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "1602158",
+          "True": "5530738"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "7788312",
+        "node_type": "condition_branch",
+        "offset": [
+          625,
+          795
+        ],
+        "text": "GandalfPresent == false",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "556310",
+        "node_name": "5530738",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1010,
+          615
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I've hear stories about the wretched creature that lives inside these halls..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7949511",
+        "node_name": "556310",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1460,
+          615
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "A vampire whose horrors led these villages to be abandoned!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "fail": "2357410",
+          "success": "6684157"
+        },
+        "filename": "res://Nodes/QuickTimeEvent.tscn",
+        "node_name": "2371446",
+        "node_type": "qte",
+        "offset": [
+          2830,
+          750
+        ],
+        "qte": "qte_up qte_down qte_a qte_y qte_right qte_x",
+        "title": "QuickTimeEvent"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9703207",
+        "node_name": "6684157",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1010,
+          925
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Fine... If anything happens to me... It is your responsiblity!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "1602158",
+          "True": "5469402"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "9703207",
+        "node_type": "condition_branch",
+        "offset": [
+          1480,
+          930
+        ],
+        "text": "DavidPresent == true",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "David",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1602158",
+        "node_name": "5469402",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1865,
+          920
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Don't worry knucklehead, my trusty slingshot will save your enchanted buttocks if worse comes to worst."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8397027",
+        "node_name": "7949511",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1915,
+          615
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I do not want to deal with this. I want people to enjoy the wonders of magic, not draw my last breath."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2371446",
+        "node_name": "8397027",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2360,
+          615
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "It looked as if Gandalf needed some convincing. Can you pick the right words?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "476153",
+        "node_name": "8898659",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1020,
+          1590
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Scattered, sad-looking candles illuminate the staircase."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "16653",
+        "node_name": "476153",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1525,
+          1590
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Suddenly, you notice a creepy shadow being thrown at the wall next to you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8943980",
+        "node_name": "618583",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2525,
+          1585
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Guests...? I did not expect guests!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8364137",
+        "node_name": "8943980",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3040,
+          1585
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "A shiver runs down your spine as you hear the creature's scratchy voice."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3733310",
+        "node_name": "8364137",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3545,
+          1590
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I would have served pastries and tea if only i had known!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "5866571",
+          "True": "1978620"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "3733310",
+        "node_type": "condition_branch",
+        "offset": [
+          550,
+          1905
+        ],
+        "text": "DavidPresent == true",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": null,
+        "node_name": "2357410",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          995,
+          1245
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Fine, you fools! If you insist, I will not parttake in your madness."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "752797",
+        "node_name": "5866571",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1460,
+          1885
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Is this meant to be a sadistic innuendo? I won't have it!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7807682",
+        "node_name": "752797",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2010,
+          1895
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Please, not in this harsh tone! I'm tired of all the hatred..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1057489",
+        "node_name": "7807682",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2530,
+          1895
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I do not mean you any harm."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1136431",
+        "node_name": "1057489",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3035,
+          1905
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The shadowy figure reveals itself from the darkness..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5816895",
+        "node_name": "1136431",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3555,
+          1905
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "and a tall, well-dressed man with pale skin stands in front of you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "752797",
+        "node_name": "1978620",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          935,
+          1905
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Stand back, or I- I'll shoot!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": null,
+          "True": "5659497"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "5816895",
+        "node_type": "condition_branch",
+        "offset": [
+          535,
+          2260
+        ],
+        "text": "DavidPresent == true",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4126608",
+        "node_name": "1162906",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1425,
+          2200
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Stop the situation from escalating!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1162906",
+        "node_name": "5659497",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          935,
+          2205
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You hear the leather of David's slingshot stretch, in anticipation of a well-aimed shot at the man infront of you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "fail": "4114313",
+          "success": "9239"
+        },
+        "filename": "res://Nodes/QuickTimeEvent.tscn",
+        "node_name": "4126608",
+        "node_type": "qte",
+        "offset": [
+          1975,
+          2255
+        ],
+        "qte": "qte_up qte_y qte_down qte_a qte_right qte_x qte_left qte_b",
+        "title": "QuickTimeEvent"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7237952",
+        "node_name": "40646",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2935,
+          2555
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "HYAAAGGHH!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3937031",
+        "node_name": "7237952",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3415,
+          2555
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The tall man bolted, and as quickly as he blocked your path, he vanished into the darkness."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2585412",
+        "node_name": "3937031",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3910,
+          2555
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "His bloodcurdling screach sent you into fight-or-flight, and you dashed ahead with the path to the outside cleared."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "40646",
+        "node_name": "4114313",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2440,
+          2555
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "David's projectile whizzes through the thin air, and hits its mark."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8929371",
+        "node_name": "9239",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2435,
+          2210
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "David, let's hear him out at the very least!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5612065",
+        "node_name": "8929371",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2960,
+          2210
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "If he wanted us dead, you would not be aiming at him at this very moment."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9398394",
+        "node_name": "8898466",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1030,
+          2940
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "But we are in dire need for assistance. And there isn't much time left..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2587485",
+        "node_name": "9398394",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1515,
+          2940
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "literally."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8898466",
+        "node_name": "5612065",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          565,
+          2935
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Who are you? I'm sorry for disturbing this late into the night..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6167754",
+        "node_name": "2587485",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2015,
+          2950
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Just a lonely vampire... But do not be afraid!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3537081",
+        "node_name": "6167754",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2550,
+          2955
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I hurt no man. I restricted myself to a diet of animal blood."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8923250",
+        "node_name": "3537081",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3075,
+          2940
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The villagers did not give me a chance to speak."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6158632",
+        "node_name": "8923250",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3595,
+          2960
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "They blamed their bruises and diseases on my presence..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "716890",
+        "node_name": "6158632",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4075,
+          2960
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "and now continue their short-sighted life elsewhere."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "7426685",
+            "text": {
+              "ENG": "Everyone deserves a second chance."
+            }
+          },
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "951195",
+            "text": {
+              "ENG": "No way in hell would we shake hands with a murderer!"
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "716890",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          565,
+          3365
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Do you believe his story?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9543376",
+        "node_name": "951195",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1445,
+          3920
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7962948",
+        "node_name": "9543376",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1945,
+          3910
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I see."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4856164",
+        "node_name": "7962948",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2450,
+          3905
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I will not hold you back."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2256581",
+        "node_name": "4856164",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2960,
+          3895
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The tall man steps aside, letting you leave without a word."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8687661",
+        "node_name": "5072994",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4525,
+          3910
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Unsure if you should have heard him out after all..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9279450",
+        "node_name": "7426685",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1450,
+          3405
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh adventurer! Thank you for your hindsight. I will not disappoint you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3030840",
+        "node_name": "2642319",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3400,
+          3340
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I am honored to meet you, uhh.."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2642319",
+        "node_name": "623254",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2890,
+          3340
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Is he the one illuminating the night sky with his spectacular magic?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Drakula",
+          4
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "623254",
+        "node_name": "5072566",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2370,
+          3340
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I see you brought the wizard."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2836493",
+        "node_name": "3006869",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4500,
+          3355
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The wizard blushed, but noone saw it happen in the darkness."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3006869",
+        "node_name": "3030840",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3955,
+          3345
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "G-Gandalf. Nice to meet you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "2836493",
+          "True": "5072566"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "9279450",
+        "node_type": "condition_branch",
+        "offset": [
+          1975,
+          3535
+        ],
+        "text": "GandalfPresent == true",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5072994",
+        "node_name": "7423693",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3955,
+          3775
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The wizard spits on the floor in front of Drakula the vampire as you leave."
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "5072994",
+          "True": "7423693"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "2256581",
+        "node_type": "condition_branch",
+        "offset": [
+          3510,
+          3985
+        ],
+        "text": "GandalfPresent == true",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4869413",
+        "node_name": "8687661",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          5050,
+          3910
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You left the mansion behind."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1658738",
+        "node_name": "188561",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2300,
+          4490
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "A-are you alone? Yes? I knew you'd know to stay away from foul abominations like him!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "312243",
+        "node_name": "1658738",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2815,
+          4495
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "There is no reason for me not to join you anymore. Let me tag along!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5544034",
+        "node_name": "3747949",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4130,
+          4705
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I didn't want to side with you anyways! You will get yourself killed wherever you are going."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "188561",
+        "node_name": "9655041",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1785,
+          4505
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "as you defeatedly exit the mansion through the creaking doors, a rustling in the bushes reveals a person's presence:"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "6114516",
+            "text": {
+              "ENG": "Accept that you were wrong, and take Gandalf back"
+            }
+          },
+          {
+            "condition": "",
+            "is_condition": false,
+            "next": "3747949",
+            "text": {
+              "ENG": "He made his choice, he obviously lacks the resolve for the journey ahead"
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "312243",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3275,
+          4495
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "How do we deal with this scaredy-cat?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Gandalf",
+          5
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1941687",
+        "node_name": "6114516",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4155,
+          4360
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Thank you!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6053951",
+        "node_name": "5544034",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4700,
+          4700
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You parted ways with the wizard..."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2585412",
+        "node_name": "6053951",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          5345,
+          4710
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "and as your feet take you elsewhere, you can see his magic illuminating the path in front of you."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "2585412",
+        "node_name": "5140185",
+        "node_type": "set_local_variable",
+        "offset": [
+          5630,
+          515
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 2,
+        "var_name": "VisitedPlaces"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4953255",
+        "node_name": "5086137",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1500,
+          1235
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The wizard leaves, and you stand alone before the towering building."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "1602158",
+        "node_name": "4953255",
+        "node_type": "set_local_variable",
+        "offset": [
+          1980,
+          1255
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": false,
+        "var_name": "GandalfPresent"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7776930",
+        "node_name": "2836493",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          5085,
+          3480
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You leave the mansion confidently with increased manpower."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "2585412",
+        "node_name": "7776930",
+        "node_type": "set_local_variable",
+        "offset": [
+          5600,
+          3590
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "DrakulaPresent"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8227143",
+        "node_name": "1941687",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4705,
+          4355
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "And thus, the adventurers continued with a magical companion."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "2585412",
+        "node_name": "8227143",
+        "node_type": "set_local_variable",
+        "offset": [
+          5345,
+          4455
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "GandalfPresent"
+      },
+      {
+        "branches": {
+          "False": "2585412",
+          "True": "9655041"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "966216",
+        "node_type": "condition_branch",
+        "offset": [
+          1420,
+          4580
+        ],
+        "text": "VisitedPlaces == 3",
+        "title": "Condition Branch"
+      },
+      {
+        "branches": {
+          "False": "2585412",
+          "True": "966216"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "4869413",
+        "node_type": "condition_branch",
+        "offset": [
+          970,
+          4575
+        ],
+        "text": "GandalfPresent == false",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "618583",
+        "node_name": "16653",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2015,
+          1590
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You turn around to run, but the path to the door is blocked."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "7788312",
+        "node_name": "4243993",
+        "node_type": "set_local_variable",
+        "offset": [
+          280,
+          745
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 1,
+        "var_name": "VisitedPlaces"
+      },
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "8024248",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -245,
+          -20
+        ],
+        "title": ""
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "7810946",
+        "node_name": "8024248",
+        "node_type": "set_local_variable",
+        "offset": [
+          -155,
+          -60
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "GandalfPresent"
+      },
+      {
+        "character": [
+          "Narrator",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8898659",
+        "node_name": "1602158",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          535,
+          1570
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "As you enter, the smell of dusty curtains and rotten floorboards crawls into your noses..."
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "DrakulaPresent": {
+        "type": 2,
+        "value": false
+      },
+      "GandalfPresent": {
+        "type": 2,
+        "value": true
+      },
+      "VisitedPlaces": {
+        "type": 1,
+        "value": 0
+      }
+    }
+  }
+]

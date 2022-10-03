@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://battle/heros/StandardHero.gd" type="Script" id=1]
+[ext_resource path="res://characters/silhouette_frames.tres" type="SpriteFrames" id=2]
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AfterImage:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AfterImage:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.733333, 0.454902, 0.454902, 1 ) ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "after_image"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("AfterImage:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.3, 1.2 ), Vector2( 1.5, 1.4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AfterImage:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.733333, 0.454902, 0.454902, 1 ), Color( 0.807843, 0.592157, 0.592157, 1 ), Color( 0.87451, 0.87451, 0.87451, 0 ) ]
+}
+
+[node name="Character" type="AnimatedSprite"]
+frames = ExtResource( 2 )
+offset = Vector2( 0, -23 )
+script = ExtResource( 1 )
+
+[node name="AfterImage" type="AnimatedSprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, -23 )
+z_index = -2
+frames = ExtResource( 2 )
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 2 )
+anims/after_image = SubResource( 1 )
