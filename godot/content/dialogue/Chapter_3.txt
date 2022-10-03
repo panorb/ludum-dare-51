@@ -1,0 +1,158 @@
+Location: Hinterlands
+Characters:
+Drakula
+    lives in Villa
+    knows about the hidden ninja village, because: sneaks in there at night drinking blood from their farm animals
+    motivation: doesn't want to hurt people, trained himself to live from animal blood, will perish if
+    fear: being judged by people who perceive him as danger
+    people from surrounding villages moved out because they were afraid of him, but in reality he was never to blame for the deaths that occured in these villages
+
+Gandalf
+    lives in wizard tower
+    definitely accompanies the party if drakula isn't around, else he needs convincing
+    motivation: impress people with his magic
+
+Events:
+
+believe Drakula: he will tag around
+
+Villa:
+
+Gandalf wants to impress people with magic that creates a small tornado in his room
+    QTE: catch the vase before it falls from the shelf onto the wizard
+
+Story:
+
+Narrator:
+    As you come closer to the light to the end of the tunnel...
+    a wide wasteland stretches from your feet to the horizon, drenched in the night sky's cold and unforgiving light.
+    Only two specks of light emit among the various buildings in front of you.
+    Next to an abandonded village a few hundred meters ahead lies a massive mansion...
+    massive and silent, its windows shedding light into the darkness like judging eyes.
+    Further down the road there erects a tower upon a hill...
+    a mysterious aura makes it clear that is indeed not abandoned.
+
+VisitedPlaces:
+    0 = none
+    1 = Villa
+    2 = Tower
+    3 = both
+Choice: Where shall we go?
+    1 Peek inside the villa (if VisitedPlaces 0 or 2)
+    2 Head up into the mysterious tower (if VisitedPlaces 0 or 1)
+    3 Continue onward (if VisitedPlaces 1 or 2 or 3)
+
+1
+    VisitedPlaces += 1
+    if Gandalfpresent == true
+        Gandalf:
+            I've heard stories about the wretched creature that lives inside these halls...
+            A vampire whose horrors led these villages to be abandoned!
+            i do not want to deal with this. i want people to enjoy the wonders of magic, not draw my last breath.
+        QTE: convince Gandalf
+            success:
+                Gandalf:
+                    If anything happens to me, this is your responsibility!
+                if Davidpresent == true
+                    David:
+                        Don't worry knucklehead, my trusty slingshot will save your enchanted buttocks if worse comes to worst.
+            fail:
+                Gandalf:
+                    Fine, you fools! If you insist, I will not parttake in your madness.
+
+    Narrator:
+        The smell of dusty curtains and rotten floorboards crawls into your noses...
+        Scattered, sad-looking candles illuminate the staircase.
+        Suddenly, you notice a creepy shadow being thrown at the wall next to you.
+        You turn around to run, but the path to the door is blocked.
+    Drakula:
+        Guests? I did not expect guests!
+    Narrator:
+        A shiver runs down your spine as you hear the creature's scratchy voice.
+    Drakula:
+        I would have served pastries and tea if only i had known!
+    if Davidpresent == true
+        David:
+            Stand back, or I- I'll shoot!
+    else
+        Alex:
+            Is this meant to be a sadistic inuendo? I won't have it!
+    Drakula:
+        Please, not in this harsh tone! I'm tired of all the hatred...
+        I do not mean you any harm.
+    Narrator:
+        The shadowy figure reveals itself from the darkness...
+        and a tall, well-dressed man with pale skin stands in front of you.
+    if Davidpresent == true
+        Narrator:
+            You hear the leather of David's slingshot stretch, in anticipation of a well-aimed shot at the man infront of you.
+        QTE: stop David from shooting
+            success:
+                Alex:
+                    David, let's hear him out at the very least!
+                    If he wanted us dead, you would not be aiming at him at this very moment.
+            fail:
+                Narrator:
+                    David's projectile whizzes through the thin air, and hits its mark.
+                Drakula:
+                    HYAAAGGHH!
+                Narrator:
+                    The tall man bolted, and as quickly as he blocked your path, he vanished into the darkness.
+                    His bloodcurdling screatch sent you into fight-or-flight, and you dashed ahead with the path to the outside cleared.
+    Alex:
+        Who are you? I'm sorry for disturbing this late into the night...
+        But we are in dire need for assistance. And there isn't much time left...
+        literally.
+    Drakula:
+        Just a lonely vampire... But do not be afraid!
+        I hurt no man. I restricted myself to a diet of animal blood.
+        The villagers did not give me a chance to speak.
+        They blamed their bruises and diseases on my presence...
+        and now continue their short-sighted life elsewhere.
+    Choice: Do you believe his story?
+        1 Everyone deserves a second chance. We need all the help we can get
+        2 No way in hell would we shake hands with a murderer!.
+    1
+        Drakula:
+            Oh adventurer! Thank you for your hindsight. I will not disappoint you.
+        if Gandalfpresent == true
+            Drakula:
+                I see you brought the wizard.
+                Is he the one illuminating the night sky with his spectacular magic?
+                I am honored to meet you, uuh..
+            Gandalf:
+                G-Gandalf. Nice to meet you.
+            Narrator:
+                The wizard blushed, but noone saw it happen in the darkness.
+        Narrator:
+            You left the mansion confidently with increased manpower.
+
+    if Drakulapresent == false and Gandalfpresent == false and VisitedPlaces == 3
+        Narrator:
+            as you defeatedly exit the mansion through the creaking doors, a rustling in the bushes reveals a person's presence:
+        Gandalf:
+            A-are you alone? Yes? I knew you'd know to stay away from foul abominations like him!
+            There is no reason for me not to join you anymore. Let me tag along!
+        Choice: How do we deal with this scaredy-cat?
+            1 Accept that you were wrong, and take Gandalf back
+            2 He made his choice, he obviously lacks the resolve for the journey ahead
+        1
+            Gandalf:
+                Thank you!
+            Narrator:
+                And thus, the adventurers continued with a magical companion.
+        2
+            Gandalf:
+                I didn't want to side with you anyways! You will get yourself killed wherever you are going.
+            Narrator:
+                You parted ways with the wizard...
+                and as your feet take you elsewhere, you can see his magic illuminating the path in front of you.
+
+2
+    VisitedPlaces += 2
+
+
+
+3
+    if Drakulapresent == true
+    want to head to the ninja village?
