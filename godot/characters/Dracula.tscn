@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://characters/silhouette_frames.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://battle/heros/Dracula.gd" type="Script" id=2]
+[ext_resource path="res://characters/dracula_frames.tres" type="SpriteFrames" id=3]
 
-[node name="Dracula" type="AnimatedSprite"]
-frames = ExtResource( 1 )
-offset = Vector2( 0, -23 )
+[node name="Dracula" instance=ExtResource( 1 )]
+frames = ExtResource( 3 )
 script = ExtResource( 2 )

@@ -9,13 +9,16 @@ onready var porkus = get_node("PositioningHeros/Porkus")
 onready var lilith = get_node("PositioningHeros/Lilith")
 onready var aelrin = get_node("PositioningHeros/Aelrin")
 onready var dracula = get_node("PositioningHeros/Dracula")
-onready var time_stealer = get_node("PositioningBoss/Time Stealer")
+onready var time_stealer = get_node("PositioningBoss/TimeStealer")
 
 onready var positioning_heros = get_node("PositioningHeros")
 onready var positioning_boss = get_node("PositioningBoss")
 
+onready var tween = get_node("Tween")
+
 onready var list_supporters = []
 var end_off_game : bool = false
+
 func _ready():
 	if Globals.flags["DavidPresent"]:
 		list_supporters.append(david)
@@ -31,8 +34,10 @@ func _ready():
 		list_supporters.append(dracula)
 	pass
 
+var in_animation = false
+
 func _input(event):
-	if !end_off_game:
+	if not end_off_game and not in_animation:
 		if event.is_action_pressed("end_round"):
 			end_round()
 		if event.is_action_pressed("battle_move_frame_up"):
@@ -47,12 +52,42 @@ func _input(event):
 			positioning_heros.switch_sprite()
 			
 func calucuate_damage():
+	in_animation = true
+	
 	print(list_skills_activate)
+	
+	tween.remove_all()
+	tween.interpolate_property(time_stealer, "position", time_stealer.original_pos, Vector2(time_stealer.original_pos.x - 50, time_stealer.original_pos.y), 0.5, Tween.TRANS_EXPO)
+	tween.start()
+	yield(tween, "tween_all_completed")
+	
 	damage_time_stealer()
+	SoundController.play_effect("man_hurt.wav")
+	alex.animate_damage()
+	
+	tween.interpolate_property(time_stealer, "position", time_stealer.position, time_stealer.original_pos, 0.8, Tween.TRANS_EXPO)
+	tween.start()
+	yield(tween, "tween_all_completed")
+	
 	if !end_off_game:
+		tween.remove_all()
+		tween.interpolate_property(alex, "position", alex.original_pos, Vector2(alex.original_pos.x + 50, alex.original_pos.y), 0.7, Tween.TRANS_EXPO)
+		tween.start()
+		yield(tween, "tween_all_completed")
+		
 		damage_alex()
+		SoundController.play_effect("meat_impact.wav")
+		time_stealer.animate_damage()
+		
+		tween.interpolate_property(alex, "position", alex.position, alex.original_pos, 0.8, Tween.TRANS_EXPO)
+		tween.start()
+		yield(tween, "tween_all_completed")
+		
 		list_skills_activate = {}
+		
+		in_animation = false
 		print("Health Alex: ", alex.health," Health Time Stealer: ", time_stealer.health)
+
 
 func damage_alex():
 	var damage = 0
@@ -115,16 +150,20 @@ func damage_time_stealer():
 	var random_value : float = 0.0
 	randomize()
 	random_value = randf() * 100
+	
 	if random_value < time_stealer.critchance:
 		alex.health -= time_stealer.damage * time_stealer.critdamage / 100
 	else:
 		alex.health -= time_stealer.damage
+	
 	if alex.health <= 0:
 		print("You Lose.")
 		end_off_game = true
+	
 	positioning_heros.change_value_health_bar(alex.health)
 
 func end_round():
+	in_animation = true
 	for supporter in list_supporters:
 		if !supporter.on_cooldown && (supporter.show_sprite == supporter.SKILL_ACTIVE):
 			list_skills_activate.merge(supporter.skill)
@@ -133,3 +172,4 @@ func end_round():
 			supporter.cooldown_length -= 1
 	positioning_heros.reset_all_sprites()
 	calucuate_damage()
+

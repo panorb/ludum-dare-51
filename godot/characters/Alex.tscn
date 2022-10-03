@@ -1,25 +1,28 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://characters/david.png" type="Texture" id=1]
+[ext_resource path="res://characters/Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://battle/heros/Alex.gd" type="Script" id=2]
+[ext_resource path="res://battle/heal_particle.png" type="Texture" id=3]
 
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 48, 48 )
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 1
+emission_sphere_radius = 6.0
+flag_disable_z = true
+gravity = Vector3( 0, -80, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
 
-[sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 1 )
-region = Rect2( 48, 0, 48, 48 )
-
-[sub_resource type="SpriteFrames" id=3]
-animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
-[node name="Alex" type="AnimatedSprite"]
-frames = SubResource( 3 )
-offset = Vector2( 0, -23 )
+[node name="Alex" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+
+[node name="AfterImage" parent="." index="0"]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="HealParticle" type="Particles2D" parent="." index="2"]
+visible = false
+position = Vector2( 1, -6 )
+amount = 4
+process_material = SubResource( 1 )
+texture = ExtResource( 3 )
+
+[node name="Tween" type="Tween" parent="." index="3"]

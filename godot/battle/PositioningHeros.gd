@@ -31,6 +31,7 @@ func _ready():
 	health_bar_alex.value = alex.health
 	calculate_supporter_count()
 	init_positions()
+	reset_all_sprites()
 	
 func calculate_supporter_count():
 	if Globals.flags["DavidPresent"]:
@@ -129,6 +130,13 @@ func reset_all_sprites():
 	for supporter in list_supporters:
 		if supporter.show_sprite == supporter.SKILL_ACTIVE:
 			supporter.reset_sprite()
+		
+		
+		if supporter.is_usable(alex.attack_type):
+			supporter.self_modulate = Color(1.0, 1.0, 1.0, 1.0)
+		else:
+			supporter.self_modulate = Color(0.6, 0.6, 0.6, 1.0)
+		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

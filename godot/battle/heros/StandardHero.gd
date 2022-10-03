@@ -15,16 +15,20 @@ var show_sprite : int = SKILL_INACTIVE setget set_show_sprite, get_show_sprite
 var skill = {}
 var on_cooldown : bool = false setget set_on_cooldown, get_on_cooldown
 var cooldown_length : int setget set_cooldown_length, get_cooldown_length
+
+onready var after_image = get_node("AfterImage")
+onready var animation_player = get_node("AnimationPlayer")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	after_image.frames = self.frames
 
 func switch_sprite(type : int): 
 	if skill_boost_type == type:
-		print("Here")
 		if show_sprite == SKILL_INACTIVE:
 			show_sprite = SKILL_ACTIVE
 			self.frame = 1
+			_animate_after_image()
 		elif show_sprite == SKILL_ACTIVE:
 			show_sprite = SKILL_INACTIVE
 			self.frame = 0
@@ -32,11 +36,24 @@ func switch_sprite(type : int):
 		if show_sprite == SKILL_INACTIVE:
 			show_sprite = SKILL_ACTIVE
 			self.frame = 1
+			_animate_after_image()
 		elif show_sprite == SKILL_ACTIVE:
 			show_sprite = SKILL_INACTIVE
 			self.frame = 0
 	else:
-		print("Skill not for current Attackmode.")
+		SoundController.play_effect("error.wav")
+
+func is_usable(type : int) -> bool:
+	if skill_boost_type == type:
+		return true
+	elif skill_boost_type == LIFESTEAL:
+		return true
+	else:
+		return false
+
+func _animate_after_image():
+	animation_player.play("after_image")
+	SoundController.play_effect("after_image.wav")
 
 func reset_sprite():
 	show_sprite = SKILL_INACTIVE
