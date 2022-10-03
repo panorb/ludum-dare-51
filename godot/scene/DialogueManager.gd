@@ -20,7 +20,7 @@ signal dialogue_signal(command)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	start_dialogue("res://content/dialogue/Chapter2P2.json")
+	start_dialogue("res://content/dialogue/Chapter2P1.json")
 	handle_current_node()
 	pass # Replace with function body.
 

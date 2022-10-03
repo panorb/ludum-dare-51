@@ -6,8 +6,8 @@ extends "StandardHero.gd"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	skill_boost_type = RANGED_COMBAT
-	skill = {Globals.SKILL_HIGHER_DAMAGE_RANGED_COMBAT : 25}
+	skill_boost_type = MELEE
+	skill = {Globals.SKILL_LIFESTEAL : 0}
 	cooldown_length = 3
 	pass
 	# ._ready()
@@ -19,7 +19,6 @@ func set_on_cooldown(value : bool):
 	
 func get_on_cooldown():
 	return on_cooldown
-
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

@@ -4,7 +4,7 @@ extends Node
 # var a = 2
 # var b = "text"
 var health : int = 1000
-var damage : int = 150
+var damage : int = 100
 var critchance : int = 75
 var critdamage : int = 150
 

@@ -7,7 +7,7 @@ extends "StandardHero.gd"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	skill_boost_type = RANGED_COMBAT
-	skill = {Globals.SKILL_HIGHER_DAMAGE_RANGED_COMBAT : 25}
+	skill = {Globals.SKILL_HIGHER_ACCURACY : 25}
 	cooldown_length = 3
 	pass
 	# ._ready()
