@@ -89,6 +89,8 @@ func calucuate_damage():
 		
 		in_animation = false
 		print("Health Alex: ", alex.health," Health Time Stealer: ", time_stealer.health)
+	
+	positioning_heros.reset_all_sprites()
 
 
 func damage_alex():
@@ -172,6 +174,5 @@ func end_round():
 			supporter.on_cooldown = true
 		else:
 			supporter.cooldown_length -= 1
-	positioning_heros.reset_all_sprites()
 	calucuate_damage()
 
