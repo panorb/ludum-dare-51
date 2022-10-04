@@ -32,7 +32,7 @@ func _ready():
 		list_supporters.append(lilith)
 	if Globals.flags["AelrinPresent"]:
 		list_supporters.append(aelrin)
-	if Globals.flags["DraculaPresent"]:
+	if Globals.flags["DrakulaPresent"]:
 		list_supporters.append(dracula)
 	pass
 

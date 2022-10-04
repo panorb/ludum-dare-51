@@ -28,7 +28,7 @@ margin_bottom = -10.0
 [node name="Panel" type="Panel" parent="BoxPanel"]
 margin_left = 5.0
 margin_top = -20.0
-margin_right = 80.0
+margin_right = 100.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 1 )
 
@@ -41,7 +41,7 @@ margin_top = -9.0
 margin_right = -6.0
 margin_bottom = 9.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Der Held"
+text = "Alex"
 
 [node name="DialogueText" type="RichTextLabel" parent="BoxPanel"]
 unique_name_in_owner = true
@@ -86,16 +86,28 @@ wait_time = 0.3
 autostart = true
 script = ExtResource( 4 )
 animation_duration_per_char = 0.008
+pitch_scale = 2.0
 
 [node name="TimerPorkus" type="Timer" parent="BlipTimers"]
 process_mode = 0
 wait_time = 0.6
 autostart = true
 script = ExtResource( 4 )
-animation_duration_per_char = 0.016
+animation_duration_per_char = 0.03
 
 [node name="TimerAlex" type="Timer" parent="BlipTimers"]
 process_mode = 0
 wait_time = 0.45
 autostart = true
 script = ExtResource( 4 )
+
+[node name="TimerZehotath" type="Timer" parent="BlipTimers"]
+wait_time = 1.2
+script = ExtResource( 4 )
+animation_duration_per_char = 0.05
+sound_file = "time_stealer_blip.wav"
+
+[node name="TimerGandalf" type="Timer" parent="BlipTimers"]
+script = ExtResource( 4 )
+animation_duration_per_char = 0.04
+sound_file = "gandalf_blip.wav"

@@ -45,7 +45,6 @@ func _input(event):
 	
 	if event.is_action_pressed("ui_accept"):
 		emit_signal("choice_selected", selected_index)
-		print("choice_selected " + str(selected_index))
 
 func _update_choice_display():
 	for i in range(3):

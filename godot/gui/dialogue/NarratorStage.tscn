@@ -169,6 +169,7 @@ rect_min_size = Vector2( 360, 0 )
 size_flags_horizontal = 3
 bbcode_enabled = true
 visible_characters = 0
+percent_visible = 0.0
 fit_content_height = true
 scroll_active = false
 
@@ -196,3 +197,4 @@ process_mode = 0
 wait_time = 0.18
 autostart = true
 script = ExtResource( 4 )
+sound_file = "narrator_blip.wav"

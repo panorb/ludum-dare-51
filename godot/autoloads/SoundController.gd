@@ -55,9 +55,9 @@ func crossfade_music_channels(channel_from : int, channel_to : int):
 	var from = _music[channel_from]
 	var to = _music[channel_to]
 	
-	_tween.stop_all()
-	_tween.interpolate_property(from, "volume_db", null, -100, 3, Tween.TRANS_LINEAR)
-	_tween.interpolate_property(to, "volume_db", null, Globals.music_volume, 0.5, Tween.TRANS_LINEAR)
+	_tween.remove_all()
+	_tween.interpolate_property(to, "volume_db", -100, linear2db(Globals.music_volume), 2.5, Tween.TRANS_LINEAR)
+	_tween.interpolate_property(from, "volume_db", from.volume_db, -100, 5.0, Tween.TRANS_LINEAR)
 	_tween.start()
 
 func set_music_volume(channel: int, volume : float = -1):

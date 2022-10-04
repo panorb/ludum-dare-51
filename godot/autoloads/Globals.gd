@@ -16,6 +16,6 @@ var flags := {
 	"PorkusPresent": false,
 	"LilithPresent": false,
 	"AelrinPresent": false,
-	"DraculaPresent": false,
+	"DrakulaPresent": false,
 	"GandalfPresent": false
 }

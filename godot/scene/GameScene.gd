@@ -6,6 +6,7 @@ onready var intro_battle : PackedScene = preload("res://battle/IntroBattle.tscn"
 onready var pause_menu : PackedScene = preload("res://gui/pause_screen/PauseScreen.tscn")
 onready var resume_button : Button 
 onready var back_to_title_button : Button
+onready var tween = get_node("Tween")
 
 var intro_scene : Node
 var pause_scene : Node
@@ -45,22 +46,47 @@ func _on_BackToTitleButton_pressed():
 func load_image(image_name : String):
 	image_manager.load_image(image_name)
 
+var in_animation = false
+
 func load_next_dialogue():
+	if in_animation:
+		return
+	
+	in_animation = true
+	
 	var tmp = dialogue_order.pop_front()
 	if tmp == "Intro_Part1":
 		intro_scene = intro_battle.instance()
 		add_child(intro_scene)
 		SoundController.play_music("Start_the_clock_alternate_version.mp3", 0)
+		dialogue_manager.modulate = Color(1, 1, 1, 0)
+		dialogue_manager.change_box_style("Dialogue")
+		
+		yield(get_tree().create_timer(2.4), "timeout")
+		tween.interpolate_property(dialogue_manager, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 0.9)
+		tween.start()
+		yield(tween, "tween_all_completed")
 	elif tmp == "Intro_Part2":
+		dialogue_manager.modulate = Color(1, 1, 1, 0)
+		dialogue_manager.change_box_style("Stage")
+		
+		tween.interpolate_property(intro_scene, "modulate", Color(1, 1, 1, 1), Color(1, 1, 1, 0), 1.4)
+		tween.start()
+		yield(tween, "tween_all_completed")
+		
 		intro_scene.queue_free()
-		SoundController.load_music("Time_flows_new.mp3", 1)
+		SoundController.play_music("Time_flows_new.mp3", 1, -100)
 		SoundController.crossfade_music_channels(0,1)
-		SoundController.play_channel(1)
+		
+		tween.interpolate_property(dialogue_manager, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1.4)
+		tween.start()
+		yield(tween, "tween_all_completed")
 	elif tmp == "BossfightBeginning":
-		SoundController.load_music("Start_the_clock.mp3", 0)
+		SoundController.play_music("Start_the_clock.mp3", 0, -100)
 		SoundController.crossfade_music_channels(1,0)
-		SoundController.play_channel(0)
 	elif tmp == null:
 		emit_signal("end_of_dialog")
 		return
+	
 	dialogue_manager.start_dialogue("res://content/dialogue/" + tmp + ".json")
+	in_animation = false

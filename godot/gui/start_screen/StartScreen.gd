@@ -7,6 +7,7 @@ onready var credit_button: Button = get_node("VBoxContainer/CreditButton")
 onready var quit_button: Button = get_node("VBoxContainer/QuitButton")
 
 signal start_button_pressed
+signal credits_button_pressed
 
 func _ready():
 	quit_button.visible = OS.get_name() != "HTML5"
@@ -23,7 +24,7 @@ func _on_OptionButton_pressed():
 	print("Option")
 	
 func _on_CreditButton_pressed():
-	print("Credit")
+	emit_signal("credits_button_pressed")
 	
 func _on_QuitButton_pressed():
 	get_tree().quit()

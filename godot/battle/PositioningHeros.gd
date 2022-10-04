@@ -49,7 +49,7 @@ func calculate_supporter_count():
 	if Globals.flags["AelrinPresent"]:
 		list_supporters.append(aelrin)
 		number_of_supporter += 1
-	if Globals.flags["DraculaPresent"]:
+	if Globals.flags["DrakulaPresent"]:
 		list_supporters.append(dracula)
 		number_of_supporter += 1
 	position_left_up = Vector2(24,48 + (3 - number_of_supporter) * 24)
@@ -77,7 +77,7 @@ func init_positions():
 	if Globals.flags["AelrinPresent"]:
 		aelrin.position = position_left_up + (count * Vector2(0,48))
 		count += 1
-	if Globals.flags["DraculaPresent"]:
+	if Globals.flags["DrakulaPresent"]:
 		dracula.position = position_left_up + (count * Vector2(0,48))
 		count += 1
 
