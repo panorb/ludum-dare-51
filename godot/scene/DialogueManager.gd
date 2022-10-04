@@ -7,6 +7,8 @@ var json_data = {}
 var current_node 
 var local = {} # Stores local variables from the editor
 var box_style : String = ""
+var still_text : bool = false
+var texts = []
 
 var dialogue_box_scene = preload("res://gui/dialogue/DialogueBox.tscn")
 var choice_box_scene = preload("res://gui/dialogue/ChoiceBox.tscn")
@@ -140,21 +142,59 @@ func show_message():
 		choice_box.choices = tmp
 	elif current_node["character"][0] == "Narrator":
 		change_box_style("Stage")
-		
-		narrator_stage.text = current_node["text"]["ENG"]
+		texts = gen_list_of_readable_texts(current_node["text"]["ENG"])
+		print(texts)
+		still_text = true
+		narrator_stage.text = texts.pop_front()
 	else:
 		change_box_style("Dialogue")
 
-		dialogue_box.display_name = current_node["character"][0]		
+		dialogue_box.display_name = current_node["character"][0]
+		#var texts = gen_list_of_readable_texts(current_node["text"]["ENG"])
+		#print("Charakter: ", texts)
 		dialogue_box.text = current_node["text"]["ENG"]
 
+func gen_list_of_readable_texts(text : String):
+	var return_texts = []
+	var single_words = text.split(" ")
+	var one_text : String = ""
+	
+	for i in range(0,len(single_words)):
+		if len(one_text) + len(single_words[i]) < 110:
+			one_text = " ".join([one_text, single_words[i]])
+			if len(one_text) > 85 && (one_text.ends_with(",") or one_text.ends_with(".")):
+				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+				one_text = ""
+		else:
+			return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+			one_text = ""
+			one_text = " ".join([one_text, single_words[i]])
+		if i == len(single_words) - 1 && one_text != "":
+			return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+			
+	return return_texts
+
 func auto_next():
-	if current_node and current_node.has("next"):
+	if still_text:
+		read_text()
+	elif current_node and current_node.has("next"):
 		current_node = get_dialogue_node_by_id(current_node["next"])
 	else:
 		current_node = null
 
+func read_text():
+	if current_node["character"][0] == "Narrator":
+		if texts == []:
+			current_node = get_dialogue_node_by_id(current_node["next"])
+			still_text = false
+		else:
+			narrator_stage.text = texts.pop_front()
+			
+		
+
 func handle_current_node():
+	if still_text:
+		return
 	if not current_node:
 		for variable in local.keys():
 			if Globals.flags.has(variable):
