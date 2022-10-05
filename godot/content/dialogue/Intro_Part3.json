@@ -1,1 +1,2108 @@
-[{"characters":["Player","Alex","David","Narrator","Zehotath"],"connections":[{"from":"START","from_port":0,"to":"9274959","to_port":0},{"from":"9274959","from_port":0,"to":"9700611","to_port":0},{"from":"8656634","from_port":0,"to":"4674515","to_port":0},{"from":"9700611","from_port":0,"to":"8656634","to_port":0},{"from":"4674515","from_port":0,"to":"5696757","to_port":0},{"from":"5696757","from_port":0,"to":"1665551","to_port":0},{"from":"1665551","from_port":0,"to":"7962912","to_port":0},{"from":"5696757","from_port":1,"to":"5836722","to_port":0},{"from":"5836722","from_port":0,"to":"90363","to_port":0},{"from":"5696757","from_port":2,"to":"5103909","to_port":0},{"from":"5103909","from_port":0,"to":"7992317","to_port":0},{"from":"7992317","from_port":0,"to":"6984695","to_port":0},{"from":"7962912","from_port":0,"to":"9840937","to_port":0},{"from":"90363","from_port":0,"to":"9840937","to_port":0},{"from":"9840937","from_port":0,"to":"4144106","to_port":0},{"from":"4144106","from_port":0,"to":"8613945","to_port":0},{"from":"8613945","from_port":0,"to":"5918557","to_port":0},{"from":"5918557","from_port":2,"to":"8349172","to_port":0},{"from":"5918557","from_port":1,"to":"6193818","to_port":0},{"from":"5918557","from_port":0,"to":"7761575","to_port":0},{"from":"7761575","from_port":0,"to":"6603054","to_port":0},{"from":"6193818","from_port":0,"to":"9381673","to_port":0},{"from":"5688469","from_port":0,"to":"4844368","to_port":0},{"from":"4353182","from_port":0,"to":"5688469","to_port":0},{"from":"4844368","from_port":0,"to":"9918545","to_port":0},{"from":"2766757","from_port":0,"to":"4597326","to_port":0},{"from":"7044174","from_port":0,"to":"2766757","to_port":0},{"from":"5217028","from_port":0,"to":"7044174","to_port":0},{"from":"9918545","from_port":2,"to":"5217028","to_port":0},{"from":"9918545","from_port":0,"to":"5217028","to_port":0},{"from":"9918545","from_port":1,"to":"9071993","to_port":0},{"from":"9071993","from_port":0,"to":"49586","to_port":0},{"from":"2950463","from_port":0,"to":"6566610","to_port":0},{"from":"5408316","from_port":0,"to":"2950463","to_port":0},{"from":"850971","from_port":0,"to":"5408316","to_port":0},{"from":"49586","from_port":0,"to":"850971","to_port":0},{"from":"4152721","from_port":0,"to":"2086216","to_port":0},{"from":"2086216","from_port":0,"to":"1152070","to_port":0},{"from":"1152070","from_port":0,"to":"3450697","to_port":0},{"from":"3450697","from_port":0,"to":"2719568","to_port":0},{"from":"49586","from_port":1,"to":"4152721","to_port":0},{"from":"9919631","from_port":0,"to":"7070600","to_port":0},{"from":"7070600","from_port":0,"to":"6030489","to_port":0},{"from":"6030489","from_port":0,"to":"9335251","to_port":0},{"from":"9335251","from_port":0,"to":"6602155","to_port":0},{"from":"6602155","from_port":0,"to":"8188528","to_port":0},{"from":"8188528","from_port":0,"to":"1993821","to_port":0},{"from":"1993821","from_port":0,"to":"5115253","to_port":0},{"from":"5115253","from_port":0,"to":"4072262","to_port":0},{"from":"4072262","from_port":0,"to":"8977364","to_port":0},{"from":"8977364","from_port":0,"to":"7894264","to_port":0},{"from":"7894264","from_port":0,"to":"5720284","to_port":0},{"from":"5719569","from_port":0,"to":"2096711","to_port":0},{"from":"2096711","from_port":1,"to":"5468231","to_port":0},{"from":"5468231","from_port":1,"to":"4353182","to_port":0},{"from":"2096711","from_port":0,"to":"9990770","to_port":0},{"from":"5468231","from_port":0,"to":"9990770","to_port":0},{"from":"9990770","from_port":0,"to":"6120688","to_port":0},{"from":"2719568","from_port":0,"to":"3866785","to_port":0},{"from":"3866785","from_port":0,"to":"9919631","to_port":0},{"from":"5720284","from_port":0,"to":"7817138","to_port":0},{"from":"START","from_port":0,"to":"7372375","to_port":0},{"from":"7372375","from_port":0,"to":"9274959","to_port":0},{"from":"8349172","from_port":0,"to":"3719160","to_port":0},{"from":"6603054","from_port":0,"to":"3719160","to_port":0},{"from":"9381673","from_port":0,"to":"3719160","to_port":0},{"from":"3719160","from_port":0,"to":"5719569","to_port":0},{"from":"4597326","from_port":0,"to":"6267605","to_port":0},{"from":"6566610","from_port":0,"to":"6267605","to_port":0},{"from":"7817138","from_port":0,"to":"6267605","to_port":0},{"from":"6120688","from_port":0,"to":"6267605","to_port":0},{"from":"6984695","from_port":0,"to":"6267605","to_port":0}],"editor_version":"3.2.4","file_name":"Intro_Part3","languages":["ENG"],"nodes":[{"filename":"res://Nodes/Start.tscn","next":"7372375","node_name":"START","node_type":"start","offset":[-205,-70],"title":""},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"8656634","node_name":"9700611","node_type":"show_message","object_path":"","offset":[445,-220],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Afraid and worried about his family because of the Time Frozen Zones, Alex went back to his home village. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"4674515","node_name":"8656634","node_type":"show_message","object_path":"","offset":[885,-220],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Arrived there he discovers that Time was frozen as well. Since Alex knows the way to the Time Relic, "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"5696757","node_name":"4674515","node_type":"show_message","object_path":"","offset":[1315,-220],"slide_camera":false,"speaker_type":0,"text":{"ENG":"he immediately continues his travels."},"title":"Show Message"},{"character":["Player",0],"choices":[{"condition":"1","is_condition":false,"next":"1665551","text":{"ENG":"Through the undergrowth of the forest."}},{"condition":"2","is_condition":false,"next":"5836722","text":{"ENG":"Across the main road which was used by merchants."}},{"condition":"3","is_condition":false,"next":"5103909","text":{"ENG":"Across the open field."}}],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"node_name":"5696757","node_type":"show_message","object_path":"","offset":[145,95],"slide_camera":false,"speaker_type":0,"text":{"ENG":"How should Alex travel to the Time Relic?"},"title":"Show Message"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"90363","node_name":"5836722","node_type":"set_local_variable","offset":[975,350],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":2,"var_name":"Visibility"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"7962912","node_name":"1665551","node_type":"set_local_variable","offset":[980,100],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":1,"var_name":"Visibility"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"9840937","node_name":"7962912","node_type":"set_local_variable","offset":[1260,100],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":2,"var_name":"Time"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"9840937","node_name":"90363","node_type":"set_local_variable","offset":[1255,350],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":1,"var_name":"Time"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"7992317","node_name":"5103909","node_type":"show_message","object_path":"","offset":[145,635],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Due to the lack of cover, Alex is perceived in the distance by a creature which ,"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6984695","node_name":"7992317","node_type":"show_message","object_path":"","offset":[575,635],"slide_camera":false,"speaker_type":0,"text":{"ENG":"at the moment of his arrival in the city, is flies away carrying the Time Relic. Alex then falls to his knees in grief "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6267605","node_name":"6984695","node_type":"show_message","object_path":"","offset":[1005,635],"slide_camera":false,"speaker_type":0,"text":{"ENG":"at not being able to immediately save his family and travels to the next Time Relic."},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"4144106","node_name":"9840937","node_type":"show_message","object_path":"","offset":[1595,205],"slide_camera":true,"speaker_type":0,"text":{"ENG":"Alex arrives unharmed in the town where the Time Relic is located."},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"8613945","node_name":"4144106","node_type":"show_message","object_path":"","offset":[150,965],"slide_camera":false,"speaker_type":0,"text":{"ENG":"In the city, many people can be seen who have experienced a normal everyday life and now stand frozen in the area. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"5918557","node_name":"8613945","node_type":"show_message","object_path":"","offset":[600,960],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Now Alex has to get to the building in which the Time Relic is located."},"title":"Show Message"},{"character":["Player",0],"choices":[{"condition":"1","is_condition":false,"next":"7761575","text":{"ENG":"Via the main street, which is full of people."}},{"condition":"2","is_condition":false,"next":"6193818","text":{"ENG":"Through the dark side streets."}},{"condition":"3","is_condition":false,"next":"8349172","text":{"ENG":"Through the sewers."}}],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"node_name":"5918557","node_type":"show_message","object_path":"","offset":[1050,960],"slide_camera":false,"speaker_type":0,"text":{"ENG":"How should Alex get to the building?"},"title":"Show Message"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"6603054","node_name":"7761575","node_type":"set_local_variable","offset":[1850,815],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":1,"var_name":"Time"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"9381673","node_name":"6193818","node_type":"set_local_variable","offset":[1845,1060],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":2,"var_name":"Time"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"3719160","node_name":"8349172","node_type":"set_local_variable","offset":[1845,1310],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":3,"var_name":"Time"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"3719160","node_name":"6603054","node_type":"set_local_variable","offset":[2150,810],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":2,"var_name":"Visibility"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"3719160","node_name":"9381673","node_type":"set_local_variable","offset":[2150,1060],"operation_type":"ADD","title":"Set Local Variable","toggle":null,"value":1,"var_name":"Visibility"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"5688469","node_name":"4353182","node_type":"show_message","object_path":"","offset":[605,1595],"slide_camera":false,"speaker_type":0,"text":{"ENG":"whose gates are wide open. Due to his military training, Alex knows immediately that there must be an"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"9918545","node_name":"4844368","node_type":"show_message","object_path":"","offset":[1510,1595],"slide_camera":false,"speaker_type":0,"text":{"ENG":"It has similarity to a tenkal of an octupus and holds a hammer and chisel in its \"hands\". "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"7044174","node_name":"5217028","node_type":"show_message","object_path":"","offset":[150,2000],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Alex attracts the creature's attention and is attacked by it before he is able to reach the creature himself. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"2766757","node_name":"7044174","node_type":"show_message","object_path":"","offset":[620,2000],"slide_camera":false,"speaker_type":0,"text":{"ENG":"The creature's hit is so severe that Alex collapses unconscious on the floor. When he wakes up again, the creature"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6267605","node_name":"4597326","node_type":"show_message","object_path":"","offset":[1540,2005],"slide_camera":false,"speaker_type":0,"text":{"ENG":"opportunity Alex sets off for the next Time Relic."},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"49586","node_name":"9071993","node_type":"show_message","object_path":"","offset":[145,2320],"slide_camera":false,"speaker_type":0,"text":{"ENG":"The creature hears the noise and leaves the Time Relic."},"title":"Show Message"},{"character":["Player",0],"choices":[{"condition":"1","is_condition":false,"next":"850971","text":{"ENG":"Use Time to reactivate the Time Relic."}},{"condition":"2","is_condition":false,"next":"4152721","text":{"ENG":"Hit the creature hard from behind."}}],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"node_name":"49586","node_type":"show_message","object_path":"","offset":[665,2315],"slide_camera":false,"speaker_type":0,"text":{"ENG":"How should Alex use the distraction?"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"4597326","node_name":"2766757","node_type":"show_message","object_path":"","offset":[1085,2005],"slide_camera":false,"speaker_type":0,"text":{"ENG":"is no longer visible and the Time Relic has disappeared. After a short mourning because of the missed"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"5408316","node_name":"850971","node_type":"show_message","object_path":"","offset":[145,2695],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Alex does not have enough Time to reactivate the Time Relic and attracts the creature's attention. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"2950463","node_name":"5408316","node_type":"show_message","object_path":"","offset":[595,2695],"slide_camera":false,"speaker_type":0,"text":{"ENG":"He is attacked by it before he can reach the creature himself. The hit of the creature is so severe that Alex collapses "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6566610","node_name":"2950463","node_type":"show_message","object_path":"","offset":[1055,2695],"slide_camera":false,"speaker_type":0,"text":{"ENG":"unconscious on the floor. When he wakes up again, the creature is no longer visible and the Time Relichas disappeared. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"1152070","node_name":"2086216","node_type":"show_message","object_path":"","offset":[590,3005],"slide_camera":false,"speaker_type":0,"text":{"ENG":"After that he has enough Time to reactivate the Time Relic again and reattach it. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"3450697","node_name":"1152070","node_type":"show_message","object_path":"","offset":[1060,3005],"slide_camera":false,"speaker_type":0,"text":{"ENG":"After the Time Relic is activated again, the Timethaws again and the people can move again. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"2719568","node_name":"3450697","node_type":"show_message","object_path":"","offset":[1510,3005],"slide_camera":false,"speaker_type":0,"text":{"ENG":"When Alex steps out of the hall into the open air again, there is a large crowd of people celebrating him for their rescue. "},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"3866785","node_name":"2719568","node_type":"show_message","object_path":"","offset":[1955,3005],"slide_camera":false,"speaker_type":0,"text":{"ENG":"The little boy from earlier is also in the front row. At the moment Alex wants to move on, the boy speaks to him."},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"7070600","node_name":"9919631","node_type":"show_message","object_path":"","offset":[600,3315],"slide_camera":false,"speaker_type":0,"text":{"ENG":"of the Time Relic Hall. I tried to stop it, but I didn't succeed."},"title":"Show Message"},{"character":["Alex",1],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6030489","node_name":"7070600","node_type":"show_message","object_path":"","offset":[1060,3315],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Your courage helped me, though."},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"9335251","node_name":"6030489","node_type":"show_message","object_path":"","offset":[1515,3320],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Really??? How exactly???"},"title":"Show Message"},{"character":["Alex",1],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6602155","node_name":"9335251","node_type":"show_message","object_path":"","offset":[1985,3320],"slide_camera":false,"speaker_type":0,"text":{"ENG":"You used to draw my attention that there could be an opponent in the hall."},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"8188528","node_name":"6602155","node_type":"show_message","object_path":"","offset":[2440,3320],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Oh okay."},"title":"Show Message"},{"character":["Alex",1],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"1993821","node_name":"8188528","node_type":"show_message","object_path":"","offset":[2920,3320],"slide_camera":false,"speaker_type":0,"text":{"ENG":"I have to move on quickly to rescue the other Time Relics so we can put an end to this chaos."},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"5115253","node_name":"1993821","node_type":"show_message","object_path":"","offset":[3385,3325],"slide_camera":false,"speaker_type":0,"text":{"ENG":"I'll go with you and help you eliminate those monsters."},"title":"Show Message"},{"character":["Alex",1],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"4072262","node_name":"5115253","node_type":"show_message","object_path":"","offset":[3840,3335],"slide_camera":false,"speaker_type":0,"text":{"ENG":"But you are so young, what about your parents or relatives?"},"title":"Show Message"},{"character":["Alex",1],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"7894264","node_name":"8977364","node_type":"show_message","object_path":"","offset":[4760,3335],"slide_camera":false,"speaker_type":0,"text":{"ENG":"In that case, join me if you like."},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"8977364","node_name":"4072262","node_type":"show_message","object_path":"","offset":[4295,3335],"slide_camera":false,"speaker_type":0,"text":{"ENG":"They... don't exist anymore. I am all I have!"},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"5720284","node_name":"7894264","node_type":"show_message","object_path":"","offset":[5205,3340],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Yay!"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"7817138","node_name":"5720284","node_type":"show_message","object_path":"","offset":[145,3670],"slide_camera":false,"speaker_type":0,"text":{"ENG":"David joins Alex's group and the group heads to the next Time Relic."},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"2096711","node_name":"5719569","node_type":"show_message","object_path":"","offset":[-490,1575],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Arriving in front of the building, Alex sees a small boy aiming a slingshot at the entrance of the building,"},"title":"Show Message"},{"branches":{"False":"5468231","True":"9990770"},"filename":"res://Nodes/Condition Branch.tscn","node_name":"2096711","node_type":"condition_branch","offset":[-30,1670],"text":"Time >= 5","title":"Condition Branch"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6120688","node_name":"9990770","node_type":"show_message","object_path":"","offset":[150,1280],"slide_camera":false,"speaker_type":0,"text":{"ENG":"whose gates are wide open. In the Monement Alex enters the building, some creature fly away, stealing the Time Relic. "},"title":"Show Message"},{"branches":{"False":"4353182","True":"9990770"},"filename":"res://Nodes/Condition Branch.tscn","node_name":"5468231","node_type":"condition_branch","offset":[300,1670],"text":"Visibility >= 4","title":"Condition Branch"},{"character":["Player",0],"choices":[{"condition":"1","is_condition":false,"next":"5217028","text":{"ENG":"Charge directly at the creature and try to kill it."}},{"condition":"2","is_condition":false,"next":"9071993","text":{"ENG":"Throw a stone at the wall to distract the creature."}},{"condition":"3","is_condition":false,"next":"5217028","text":{"ENG":"Yell \"I'll kill you!\" full of hate."}}],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"node_name":"9918545","node_type":"show_message","object_path":"","offset":[1985,1600],"slide_camera":false,"speaker_type":0,"text":{"ENG":"How should Alex react to the creature?"},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"2086216","node_name":"4152721","node_type":"show_message","object_path":"","offset":[115,2995],"slide_camera":false,"speaker_type":0,"text":{"ENG":"Alex is able to knock the creature unconscious by a heavy hit on the creature's eye. "},"title":"Show Message"},{"character":["David",2],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"9919631","node_name":"3866785","node_type":"show_message","object_path":"","offset":[120,3315],"slide_camera":true,"speaker_type":0,"text":{"ENG":"My name is David and I saw the creature you fought when I was playing with other children outside the gates "},"title":"Show Message"},{"filename":"res://Nodes/Set Local Variable.tscn","next":"6267605","node_name":"7817138","node_type":"set_local_variable","offset":[635,3775],"operation_type":null,"title":"Set Local Variable","toggle":false,"value":true,"var_name":"DavidPresent"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"9700611","node_name":"9274959","node_type":"show_message","object_path":"","offset":[-15,-220],"slide_camera":false,"speaker_type":0,"text":{"ENG":"The beginning of the chaos started by a trap for the royal army, which put them in the Time Frozen Zone.\n"},"title":"Show Message"},{"filename":"res://Nodes/Dialogue Signal.tscn","next":"9274959","node_name":"7372375","node_type":"dialogue_signal","offset":[-190,-415],"rect_size_x":328.999512,"rect_size_y":84,"signal":"misdirection_army.png","title":"Emit Dialogue Signal"},{"filename":"res://Nodes/Dialogue Signal.tscn","next":"5719569","node_name":"3719160","node_type":"dialogue_signal","offset":[-730,1430],"rect_size_x":329,"rect_size_y":84,"signal":"david_slingshot.png","title":"Emit Dialogue Signal"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6267605","node_name":"6566610","node_type":"show_message","object_path":"","offset":[1505,2690],"slide_camera":false,"speaker_type":0,"text":{"ENG":"After a short mourning because of the missed chance Alex sets off for the next Time Relic."},"title":"Show Message"},{"filename":"res://Nodes/Dialogue Signal.tscn","next":null,"node_name":"6267605","node_type":"dialogue_signal","offset":[2470,2460],"rect_size_x":328.999634,"rect_size_y":84,"signal":"black.png","title":"Emit Dialogue Signal"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"6267605","node_name":"6120688","node_type":"show_message","object_path":"","offset":[620,1310],"slide_camera":true,"speaker_type":0,"text":{"ENG":"After a short mourning because of the missed opportunity Alex sets off for the next Time Relic."},"title":"Show Message"},{"character":["Narrator",3],"expand":null,"expand_size":[0,0],"file":"","filename":"res://Nodes/Show Message.tscn","is_box":false,"next":"4844368","node_name":"5688469","node_type":"show_message","object_path":"","offset":[1070,1580],"slide_camera":false,"speaker_type":0,"text":{"ENG":"enemy in the building. As he enters the Hall of the Time Relic, he sees a creature scurrying around the Time Relic. "},"title":"Show Message"}],"selected_language":"ENG","variables":{"DavidPresent":{"type":2,"value":false},"Time":{"type":1,"value":0},"Visibility":{"type":1,"value":0}}}]
+[
+  {
+    "characters": [
+      "Player",
+      "Alex",
+      "David",
+      "Narrator",
+      "Zehotath"
+    ],
+    "connections": [
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "9274959",
+        "to_port": 0
+      },
+      {
+        "from": "9274959",
+        "from_port": 0,
+        "to": "9700611",
+        "to_port": 0
+      },
+      {
+        "from": "8656634",
+        "from_port": 0,
+        "to": "4674515",
+        "to_port": 0
+      },
+      {
+        "from": "9700611",
+        "from_port": 0,
+        "to": "8656634",
+        "to_port": 0
+      },
+      {
+        "from": "4674515",
+        "from_port": 0,
+        "to": "5696757",
+        "to_port": 0
+      },
+      {
+        "from": "5696757",
+        "from_port": 0,
+        "to": "1665551",
+        "to_port": 0
+      },
+      {
+        "from": "1665551",
+        "from_port": 0,
+        "to": "7962912",
+        "to_port": 0
+      },
+      {
+        "from": "5696757",
+        "from_port": 1,
+        "to": "5836722",
+        "to_port": 0
+      },
+      {
+        "from": "5836722",
+        "from_port": 0,
+        "to": "90363",
+        "to_port": 0
+      },
+      {
+        "from": "5696757",
+        "from_port": 2,
+        "to": "5103909",
+        "to_port": 0
+      },
+      {
+        "from": "5103909",
+        "from_port": 0,
+        "to": "7992317",
+        "to_port": 0
+      },
+      {
+        "from": "7992317",
+        "from_port": 0,
+        "to": "6984695",
+        "to_port": 0
+      },
+      {
+        "from": "7962912",
+        "from_port": 0,
+        "to": "9840937",
+        "to_port": 0
+      },
+      {
+        "from": "90363",
+        "from_port": 0,
+        "to": "9840937",
+        "to_port": 0
+      },
+      {
+        "from": "9840937",
+        "from_port": 0,
+        "to": "4144106",
+        "to_port": 0
+      },
+      {
+        "from": "4144106",
+        "from_port": 0,
+        "to": "8613945",
+        "to_port": 0
+      },
+      {
+        "from": "8613945",
+        "from_port": 0,
+        "to": "5918557",
+        "to_port": 0
+      },
+      {
+        "from": "5918557",
+        "from_port": 2,
+        "to": "8349172",
+        "to_port": 0
+      },
+      {
+        "from": "5918557",
+        "from_port": 1,
+        "to": "6193818",
+        "to_port": 0
+      },
+      {
+        "from": "5918557",
+        "from_port": 0,
+        "to": "7761575",
+        "to_port": 0
+      },
+      {
+        "from": "7761575",
+        "from_port": 0,
+        "to": "6603054",
+        "to_port": 0
+      },
+      {
+        "from": "6193818",
+        "from_port": 0,
+        "to": "9381673",
+        "to_port": 0
+      },
+      {
+        "from": "5688469",
+        "from_port": 0,
+        "to": "4844368",
+        "to_port": 0
+      },
+      {
+        "from": "4353182",
+        "from_port": 0,
+        "to": "5688469",
+        "to_port": 0
+      },
+      {
+        "from": "4844368",
+        "from_port": 0,
+        "to": "9918545",
+        "to_port": 0
+      },
+      {
+        "from": "2766757",
+        "from_port": 0,
+        "to": "4597326",
+        "to_port": 0
+      },
+      {
+        "from": "7044174",
+        "from_port": 0,
+        "to": "2766757",
+        "to_port": 0
+      },
+      {
+        "from": "5217028",
+        "from_port": 0,
+        "to": "7044174",
+        "to_port": 0
+      },
+      {
+        "from": "9918545",
+        "from_port": 2,
+        "to": "5217028",
+        "to_port": 0
+      },
+      {
+        "from": "9918545",
+        "from_port": 0,
+        "to": "5217028",
+        "to_port": 0
+      },
+      {
+        "from": "9918545",
+        "from_port": 1,
+        "to": "9071993",
+        "to_port": 0
+      },
+      {
+        "from": "9071993",
+        "from_port": 0,
+        "to": "49586",
+        "to_port": 0
+      },
+      {
+        "from": "2950463",
+        "from_port": 0,
+        "to": "6566610",
+        "to_port": 0
+      },
+      {
+        "from": "5408316",
+        "from_port": 0,
+        "to": "2950463",
+        "to_port": 0
+      },
+      {
+        "from": "850971",
+        "from_port": 0,
+        "to": "5408316",
+        "to_port": 0
+      },
+      {
+        "from": "49586",
+        "from_port": 0,
+        "to": "850971",
+        "to_port": 0
+      },
+      {
+        "from": "4152721",
+        "from_port": 0,
+        "to": "2086216",
+        "to_port": 0
+      },
+      {
+        "from": "2086216",
+        "from_port": 0,
+        "to": "1152070",
+        "to_port": 0
+      },
+      {
+        "from": "1152070",
+        "from_port": 0,
+        "to": "3450697",
+        "to_port": 0
+      },
+      {
+        "from": "3450697",
+        "from_port": 0,
+        "to": "2719568",
+        "to_port": 0
+      },
+      {
+        "from": "49586",
+        "from_port": 1,
+        "to": "4152721",
+        "to_port": 0
+      },
+      {
+        "from": "9919631",
+        "from_port": 0,
+        "to": "7070600",
+        "to_port": 0
+      },
+      {
+        "from": "7070600",
+        "from_port": 0,
+        "to": "6030489",
+        "to_port": 0
+      },
+      {
+        "from": "6030489",
+        "from_port": 0,
+        "to": "9335251",
+        "to_port": 0
+      },
+      {
+        "from": "9335251",
+        "from_port": 0,
+        "to": "6602155",
+        "to_port": 0
+      },
+      {
+        "from": "6602155",
+        "from_port": 0,
+        "to": "8188528",
+        "to_port": 0
+      },
+      {
+        "from": "8188528",
+        "from_port": 0,
+        "to": "1993821",
+        "to_port": 0
+      },
+      {
+        "from": "1993821",
+        "from_port": 0,
+        "to": "5115253",
+        "to_port": 0
+      },
+      {
+        "from": "5115253",
+        "from_port": 0,
+        "to": "4072262",
+        "to_port": 0
+      },
+      {
+        "from": "4072262",
+        "from_port": 0,
+        "to": "8977364",
+        "to_port": 0
+      },
+      {
+        "from": "8977364",
+        "from_port": 0,
+        "to": "7894264",
+        "to_port": 0
+      },
+      {
+        "from": "7894264",
+        "from_port": 0,
+        "to": "5720284",
+        "to_port": 0
+      },
+      {
+        "from": "5719569",
+        "from_port": 0,
+        "to": "2096711",
+        "to_port": 0
+      },
+      {
+        "from": "2096711",
+        "from_port": 1,
+        "to": "5468231",
+        "to_port": 0
+      },
+      {
+        "from": "5468231",
+        "from_port": 1,
+        "to": "4353182",
+        "to_port": 0
+      },
+      {
+        "from": "2096711",
+        "from_port": 0,
+        "to": "9990770",
+        "to_port": 0
+      },
+      {
+        "from": "5468231",
+        "from_port": 0,
+        "to": "9990770",
+        "to_port": 0
+      },
+      {
+        "from": "9990770",
+        "from_port": 0,
+        "to": "6120688",
+        "to_port": 0
+      },
+      {
+        "from": "2719568",
+        "from_port": 0,
+        "to": "3866785",
+        "to_port": 0
+      },
+      {
+        "from": "3866785",
+        "from_port": 0,
+        "to": "9919631",
+        "to_port": 0
+      },
+      {
+        "from": "5720284",
+        "from_port": 0,
+        "to": "7817138",
+        "to_port": 0
+      },
+      {
+        "from": "START",
+        "from_port": 0,
+        "to": "7372375",
+        "to_port": 0
+      },
+      {
+        "from": "7372375",
+        "from_port": 0,
+        "to": "9274959",
+        "to_port": 0
+      },
+      {
+        "from": "8349172",
+        "from_port": 0,
+        "to": "3719160",
+        "to_port": 0
+      },
+      {
+        "from": "6603054",
+        "from_port": 0,
+        "to": "3719160",
+        "to_port": 0
+      },
+      {
+        "from": "9381673",
+        "from_port": 0,
+        "to": "3719160",
+        "to_port": 0
+      },
+      {
+        "from": "3719160",
+        "from_port": 0,
+        "to": "5719569",
+        "to_port": 0
+      },
+      {
+        "from": "4597326",
+        "from_port": 0,
+        "to": "6267605",
+        "to_port": 0
+      },
+      {
+        "from": "6566610",
+        "from_port": 0,
+        "to": "6267605",
+        "to_port": 0
+      },
+      {
+        "from": "7817138",
+        "from_port": 0,
+        "to": "6267605",
+        "to_port": 0
+      },
+      {
+        "from": "6120688",
+        "from_port": 0,
+        "to": "6267605",
+        "to_port": 0
+      },
+      {
+        "from": "6984695",
+        "from_port": 0,
+        "to": "6267605",
+        "to_port": 0
+      }
+    ],
+    "editor_version": "3.2.4",
+    "file_name": "Intro_Part3",
+    "languages": [
+      "ENG"
+    ],
+    "nodes": [
+      {
+        "filename": "res://Nodes/Start.tscn",
+        "next": "7372375",
+        "node_name": "START",
+        "node_type": "start",
+        "offset": [
+          -205,
+          -70
+        ],
+        "title": ""
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8656634",
+        "node_name": "9700611",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          445,
+          -220
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Afraid and worried about his family because of the Time Frozen Zones, Alex went back to his home village. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4674515",
+        "node_name": "8656634",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          885,
+          -220
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Arrived there he discovers that Time was frozen as well. Since Alex knows the way to the Time Relic, "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5696757",
+        "node_name": "4674515",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1315,
+          -220
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "he immediately continues his travels."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "1",
+            "is_condition": false,
+            "next": "1665551",
+            "text": {
+              "ENG": "Through the undergrowth of the forest."
+            }
+          },
+          {
+            "condition": "2",
+            "is_condition": false,
+            "next": "5836722",
+            "text": {
+              "ENG": "Across the main road which was used by merchants."
+            }
+          },
+          {
+            "condition": "3",
+            "is_condition": false,
+            "next": "5103909",
+            "text": {
+              "ENG": "Across the open field."
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "5696757",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          145,
+          95
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "How should Alex travel to the Time Relic?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "90363",
+        "node_name": "5836722",
+        "node_type": "set_local_variable",
+        "offset": [
+          975,
+          350
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 2,
+        "var_name": "Visibility"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "7962912",
+        "node_name": "1665551",
+        "node_type": "set_local_variable",
+        "offset": [
+          980,
+          100
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 1,
+        "var_name": "Visibility"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "9840937",
+        "node_name": "7962912",
+        "node_type": "set_local_variable",
+        "offset": [
+          1260,
+          100
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 2,
+        "var_name": "Time"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "9840937",
+        "node_name": "90363",
+        "node_type": "set_local_variable",
+        "offset": [
+          1255,
+          350
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 1,
+        "var_name": "Time"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7992317",
+        "node_name": "5103909",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          145,
+          635
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Due to the lack of cover, Alex is perceived in the distance by a creature which ,"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6984695",
+        "node_name": "7992317",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          575,
+          635
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "at the moment of his arrival in the city, is flies away carrying the Time Relic. Alex then falls to his knees in grief "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6267605",
+        "node_name": "6984695",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1005,
+          635
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "at not being able to immediately save his family and travels to the next Time Relic."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4144106",
+        "node_name": "9840937",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1595,
+          205
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Alex arrives unharmed in the town where the Time Relic is located."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8613945",
+        "node_name": "4144106",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          150,
+          965
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "In the city, many people can be seen who have experienced a normal everyday life and now stand frozen in the area. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5918557",
+        "node_name": "8613945",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          600,
+          960
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Now Alex has to get to the building in which the Time Relic is located."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "1",
+            "is_condition": false,
+            "next": "7761575",
+            "text": {
+              "ENG": "Via the main street, which is full of people."
+            }
+          },
+          {
+            "condition": "2",
+            "is_condition": false,
+            "next": "6193818",
+            "text": {
+              "ENG": "Through the dark side streets."
+            }
+          },
+          {
+            "condition": "3",
+            "is_condition": false,
+            "next": "8349172",
+            "text": {
+              "ENG": "Through the sewers."
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "5918557",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1050,
+          960
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "How should Alex get to the building?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "6603054",
+        "node_name": "7761575",
+        "node_type": "set_local_variable",
+        "offset": [
+          1850,
+          815
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 1,
+        "var_name": "Time"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "9381673",
+        "node_name": "6193818",
+        "node_type": "set_local_variable",
+        "offset": [
+          1845,
+          1060
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 2,
+        "var_name": "Time"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "3719160",
+        "node_name": "8349172",
+        "node_type": "set_local_variable",
+        "offset": [
+          1845,
+          1310
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 3,
+        "var_name": "Time"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "3719160",
+        "node_name": "6603054",
+        "node_type": "set_local_variable",
+        "offset": [
+          2150,
+          810
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 2,
+        "var_name": "Visibility"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "3719160",
+        "node_name": "9381673",
+        "node_type": "set_local_variable",
+        "offset": [
+          2150,
+          1060
+        ],
+        "operation_type": "ADD",
+        "title": "Set Local Variable",
+        "toggle": null,
+        "value": 1,
+        "var_name": "Visibility"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5688469",
+        "node_name": "4353182",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          605,
+          1595
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "whose gates are wide open. Due to his military training, Alex knows immediately that there must be an"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9918545",
+        "node_name": "4844368",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1510,
+          1595
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "It has similarity to a tentacle of an octupus and holds a hammer and chisel in its \"hands\". "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7044174",
+        "node_name": "5217028",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          150,
+          2000
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Alex attracts the creature's attention and is attacked by it before he is able to reach the creature himself. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2766757",
+        "node_name": "7044174",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          620,
+          2000
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The creature's hit is so severe that Alex collapses unconscious on the floor. When he wakes up again, the creature"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6267605",
+        "node_name": "4597326",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1540,
+          2005
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "opportunity Alex sets off for the next Time Relic."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "49586",
+        "node_name": "9071993",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          145,
+          2320
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The creature hears the noise and leaves the Time Relic."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "1",
+            "is_condition": false,
+            "next": "850971",
+            "text": {
+              "ENG": "Use Time to reactivate the Time Relic."
+            }
+          },
+          {
+            "condition": "2",
+            "is_condition": false,
+            "next": "4152721",
+            "text": {
+              "ENG": "Hit the creature hard from behind."
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "49586",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          665,
+          2315
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "How should Alex use the distraction?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4597326",
+        "node_name": "2766757",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1085,
+          2005
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "is no longer visible and the Time Relic has disappeared. After a short mourning because of the missed"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5408316",
+        "node_name": "850971",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          145,
+          2695
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Alex does not have enough Time to reactivate the Time Relic and attracts the creature's attention. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2950463",
+        "node_name": "5408316",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          595,
+          2695
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "He is attacked by it before he can reach the creature himself. The hit of the creature is so severe that Alex collapses "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6566610",
+        "node_name": "2950463",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1055,
+          2695
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "unconscious on the floor. When he wakes up again, the creature is no longer visible and the Time Relichas disappeared. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1152070",
+        "node_name": "2086216",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          590,
+          3005
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "After that he has enough Time to reactivate the Time Relic again and reattach it. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3450697",
+        "node_name": "1152070",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1060,
+          3005
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "After the Time Relic is activated again, the Timethaws again and the people can move again. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2719568",
+        "node_name": "3450697",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1510,
+          3005
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "When Alex steps out of the hall into the open air again, there is a large crowd of people celebrating him for their rescue. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "3866785",
+        "node_name": "2719568",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1955,
+          3005
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The little boy from earlier is also in the front row. At the moment Alex wants to move on, the boy speaks to him."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7070600",
+        "node_name": "9919631",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          600,
+          3315
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "of the Time Relic Hall. I tried to stop it, but I didn't succeed."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6030489",
+        "node_name": "7070600",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1060,
+          3315
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Your courage helped me, though."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9335251",
+        "node_name": "6030489",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1515,
+          3320
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Really??? How exactly???"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6602155",
+        "node_name": "9335251",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1985,
+          3320
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "You used to draw my attention that there could be an opponent in the hall."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8188528",
+        "node_name": "6602155",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2440,
+          3320
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Oh okay."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "1993821",
+        "node_name": "8188528",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          2920,
+          3320
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I have to move on quickly to rescue the other Time Relics so we can put an end to this chaos."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5115253",
+        "node_name": "1993821",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3385,
+          3325
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "I'll go with you and help you eliminate those monsters."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4072262",
+        "node_name": "5115253",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          3840,
+          3335
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "But you are so young, what about your parents or relatives?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Alex",
+          1
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7894264",
+        "node_name": "8977364",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4760,
+          3335
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "In that case, join me if you like."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "8977364",
+        "node_name": "4072262",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          4295,
+          3335
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "They... don't exist anymore. I am all I have!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "5720284",
+        "node_name": "7894264",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          5205,
+          3340
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Yay!"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "7817138",
+        "node_name": "5720284",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          145,
+          3670
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "David joins Alex's group and the group heads to the next Time Relic."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2096711",
+        "node_name": "5719569",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -490,
+          1575
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Arriving in front of the building, Alex sees a small boy aiming a slingshot at the entrance of the building,"
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "5468231",
+          "True": "9990770"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "2096711",
+        "node_type": "condition_branch",
+        "offset": [
+          -30,
+          1670
+        ],
+        "text": "Time >= 5",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6120688",
+        "node_name": "9990770",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          150,
+          1280
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "whose gates are wide open. In the Monement Alex enters the building, some creature fly away, stealing the Time Relic. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "branches": {
+          "False": "4353182",
+          "True": "9990770"
+        },
+        "filename": "res://Nodes/Condition Branch.tscn",
+        "node_name": "5468231",
+        "node_type": "condition_branch",
+        "offset": [
+          300,
+          1670
+        ],
+        "text": "Visibility >= 4",
+        "title": "Condition Branch"
+      },
+      {
+        "character": [
+          "Player",
+          0
+        ],
+        "choices": [
+          {
+            "condition": "1",
+            "is_condition": false,
+            "next": "5217028",
+            "text": {
+              "ENG": "Charge directly at the creature and try to kill it."
+            }
+          },
+          {
+            "condition": "2",
+            "is_condition": false,
+            "next": "9071993",
+            "text": {
+              "ENG": "Throw a stone at the wall to distract the creature."
+            }
+          },
+          {
+            "condition": "3",
+            "is_condition": false,
+            "next": "5217028",
+            "text": {
+              "ENG": "Yell \"I'll kill you!\" full of hate."
+            }
+          }
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "node_name": "9918545",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1985,
+          1600
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "How should Alex react to the creature?"
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "2086216",
+        "node_name": "4152721",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          115,
+          2995
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "Alex is able to knock the creature unconscious by a heavy hit on the creature's eye. "
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "David",
+          2
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9919631",
+        "node_name": "3866785",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          120,
+          3315
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "My name is David and I saw the creature you fought when I was playing with other children outside the gates "
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Set Local Variable.tscn",
+        "next": "6267605",
+        "node_name": "7817138",
+        "node_type": "set_local_variable",
+        "offset": [
+          635,
+          3775
+        ],
+        "operation_type": null,
+        "title": "Set Local Variable",
+        "toggle": false,
+        "value": true,
+        "var_name": "DavidPresent"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "9700611",
+        "node_name": "9274959",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          -15,
+          -220
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "The beginning of the chaos started by a trap for the royal army, which put them in the Time Frozen Zone.\n"
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Dialogue Signal.tscn",
+        "next": "9274959",
+        "node_name": "7372375",
+        "node_type": "dialogue_signal",
+        "offset": [
+          -190,
+          -415
+        ],
+        "rect_size_x": 328.999512,
+        "rect_size_y": 84,
+        "signal": "misdirection_army.png",
+        "title": "Emit Dialogue Signal"
+      },
+      {
+        "filename": "res://Nodes/Dialogue Signal.tscn",
+        "next": "5719569",
+        "node_name": "3719160",
+        "node_type": "dialogue_signal",
+        "offset": [
+          -730,
+          1430
+        ],
+        "rect_size_x": 329,
+        "rect_size_y": 84,
+        "signal": "david_slingshot.png",
+        "title": "Emit Dialogue Signal"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6267605",
+        "node_name": "6566610",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1505,
+          2690
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "After a short mourning because of the missed chance Alex sets off for the next Time Relic."
+        },
+        "title": "Show Message"
+      },
+      {
+        "filename": "res://Nodes/Dialogue Signal.tscn",
+        "next": null,
+        "node_name": "6267605",
+        "node_type": "dialogue_signal",
+        "offset": [
+          2470,
+          2460
+        ],
+        "rect_size_x": 328.999634,
+        "rect_size_y": 84,
+        "signal": "black.png",
+        "title": "Emit Dialogue Signal"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "6267605",
+        "node_name": "6120688",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          620,
+          1310
+        ],
+        "slide_camera": true,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "After a short mourning because of the missed opportunity Alex sets off for the next Time Relic."
+        },
+        "title": "Show Message"
+      },
+      {
+        "character": [
+          "Narrator",
+          3
+        ],
+        "expand": null,
+        "expand_size": [
+          0,
+          0
+        ],
+        "file": "",
+        "filename": "res://Nodes/Show Message.tscn",
+        "is_box": false,
+        "next": "4844368",
+        "node_name": "5688469",
+        "node_type": "show_message",
+        "object_path": "",
+        "offset": [
+          1070,
+          1580
+        ],
+        "slide_camera": false,
+        "speaker_type": 0,
+        "text": {
+          "ENG": "enemy in the building. As he enters the Hall of the Time Relic, he sees a creature scurrying around the Time Relic. "
+        },
+        "title": "Show Message"
+      }
+    ],
+    "selected_language": "ENG",
+    "variables": {
+      "DavidPresent": {
+        "type": 2,
+        "value": false
+      },
+      "Time": {
+        "type": 1,
+        "value": 0
+      },
+      "Visibility": {
+        "type": 1,
+        "value": 0
+      }
+    }
+  }
+]

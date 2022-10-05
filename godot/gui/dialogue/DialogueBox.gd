@@ -12,7 +12,6 @@ onready var blip_timers_node = get_node("BlipTimers")
 onready var proceed_indicator = get_node("BoxPanel/ProceedIndicator")
 onready var proceed_indicator_timer = get_node("BoxPanel/ProceedIndicator/Timer")
 
-var _blip_sound_file = "default_blip.wav"
 var _animation_duration_per_char = 0.014
 
 var _play_blips = false
@@ -31,8 +30,15 @@ func _set_text(new_val):
 	_animate_dialogue_text()
 
 func _on_blip_timer_timeout(node):
-	if node.name.ends_with(display_name) and _play_blips:
-		SoundController.play_effect(_blip_sound_file, node.pitch_scale)
+	if not _play_blips:
+		return
+	
+	if blip_timers_node.has_node("Timer" + self.display_name):
+		if node.name.ends_with(self.display_name):
+			SoundController.play_effect(node.get_current_sound_file(), node.pitch_scale)
+	elif node.name.ends_with("Alex"):
+		SoundController.play_effect("default_blip.wav", 1.0)
+
 
 func _get_text():
 	return dialogue_text.text
@@ -42,10 +48,8 @@ func _set_display_name(new_val):
 	
 	if blip_timers_node.has_node("Timer" + new_val):
 		var blip_timer_node = blip_timers_node.get_node("Timer" + new_val)
-		_blip_sound_file = blip_timer_node.sound_file
 		_animation_duration_per_char = blip_timer_node.animation_duration_per_char
 	else:
-		_blip_sound_file = "default_blip.wav"
 		_animation_duration_per_char = 0.014
 
 func _get_display_name():
