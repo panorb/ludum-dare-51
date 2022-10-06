@@ -142,37 +142,85 @@ func show_message():
 		choice_box.choices = tmp
 	elif current_node["character"][0] == "Narrator":
 		change_box_style("Stage")
-		texts = gen_list_of_readable_texts(current_node["text"]["ENG"])
-		print(texts)
+		if Globals.language["English"]:
+			texts = gen_list_of_readable_texts_narrator(current_node["text"]["ENG"])
+		elif Globals.language["German"]:
+			texts = gen_list_of_readable_texts_narrator(current_node["text"]["GER"])
 		still_text = true
 		narrator_stage.text = texts.pop_front()
 	else:
 		change_box_style("Dialogue")
+		if Globals.language["English"]:
+			texts = gen_list_of_readable_texts_character(current_node["text"]["ENG"])
+		elif Globals.language["German"]:
+			texts = gen_list_of_readable_texts_character(current_node["text"]["GER"])
+		still_text = true
+		print(texts)
+		dialogue_box.display_name = texts.pop_front().trim_suffix(":")
+		dialogue_box.text = texts.pop_front()
 
-		dialogue_box.display_name = current_node["character"][0]
-		#var texts = gen_list_of_readable_texts(current_node["text"]["ENG"])
-		#print("Charakter: ", texts)
-		dialogue_box.text = current_node["text"]["ENG"]
-
-func gen_list_of_readable_texts(text : String):
+func gen_list_of_readable_texts_narrator(text : String):
 	var return_texts = []
 	var single_words = text.split(" ")
 	var one_text : String = ""
 	
 	for i in range(0,len(single_words)):
-		if len(one_text) + len(single_words[i]) < 110:
+		if single_words[i] == "/@":
+			if one_text != "":
+				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+				one_text = ""
+		elif len(one_text) + len(single_words[i]) < 115:
 			one_text = " ".join([one_text, single_words[i]])
-			if len(one_text) > 85 && (one_text.ends_with(",") or one_text.ends_with(".")):
+			if len(one_text) > 80 and end_of_sentence(one_text):
 				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
 				one_text = ""
 		else:
 			return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
 			one_text = ""
 			one_text = " ".join([one_text, single_words[i]])
-		if i == len(single_words) - 1 && one_text != "":
+		if i == len(single_words) - 1 and one_text != "":
 			return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
 			
 	return return_texts
+
+func gen_list_of_readable_texts_character(text : String):
+	var return_texts = []
+	text = text.replace("\n", " ")
+	var single_words = text.split(" ")
+	var one_text : String = ""
+	
+	for i in range(0,len(single_words)):
+		if single_words[i].ends_with(":"):
+			if one_text != "":
+				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+				one_text = ""
+			return_texts.append(single_words[i])
+		elif single_words[i] == "/@":
+			if one_text != "":
+				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+				one_text = ""
+		elif len(one_text) + len(single_words[i]) < 120:
+			one_text = " ".join([one_text, single_words[i]])
+			if len(one_text) > 90 and end_of_sentence(one_text):
+				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+				one_text = ""
+		else:
+			return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+			one_text = ""
+			one_text = " ".join([one_text, single_words[i]])
+		if i == len(single_words) - 1 and one_text != "":
+			return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
+			
+	return return_texts
+
+func end_of_sentence(text : String):
+	if text.ends_with(",") or text.ends_with(".") or text.ends_with("!") or text.ends_with("?") :
+		if text.ends_with(".."):
+			return false
+		return true
+	else:
+		return false
+	
 
 func auto_next():
 	if still_text:
@@ -189,8 +237,16 @@ func read_text():
 			still_text = false
 		else:
 			narrator_stage.text = texts.pop_front()
-			
-		
+	elif current_node["character"][0] == "Character":
+		if texts == []:
+			current_node = get_dialogue_node_by_id(current_node["next"])
+			still_text = false
+		else:
+			var tmp = texts.pop_front()
+			if tmp.ends_with(":"):
+				dialogue_box.display_name = tmp.trim_suffix(":")
+				tmp = texts.pop_front()
+			dialogue_box.text = tmp
 
 func handle_current_node():
 	if still_text:

@@ -8,6 +8,7 @@ var pause_screen : PackedScene = preload("res://gui/pause_screen/PauseScreen.tsc
 var game_screen : PackedScene = preload("res://scene/GameScene.tscn")
 var end_screen : PackedScene = preload("res://scene/EndScene.tscn")
 var credits_scene : PackedScene = preload("res://gui/credits/CreditsScene.tscn")
+var option_screen : PackedScene = preload("res://gui/option_screen/OptionScreen.tscn")
 var current_scene : Node
 
 func _ready():
@@ -38,6 +39,9 @@ func end_of_game(value : bool):
 	change_scene(end_screen)
 	current_scene.win = value
 
+func open_options():
+	change_scene(option_screen)
+
 func change_scene(scene : PackedScene):
 	if current_scene:
 		current_scene.queue_free()
@@ -46,6 +50,10 @@ func change_scene(scene : PackedScene):
 	
 	if current_scene.has_signal("start_button_pressed"):
 		current_scene.connect("start_button_pressed", self, "start_game")
+	if current_scene.has_signal("option_button_pressed"):
+		current_scene.connect("option_button_pressed", self, "open_options")
+	if current_scene.has_signal("back_button_pressed"):
+		current_scene.connect("back_button_pressed", self, "back_to_title")
 	if current_scene.has_signal("credits_button_pressed"):
 		current_scene.connect("credits_button_pressed", self, "open_credits")
 	if current_scene.has_signal("back_to_title"):

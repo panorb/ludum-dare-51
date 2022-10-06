@@ -4,7 +4,7 @@ onready var file_dialog = get_node("FileDialog")
 onready var dialogue_manager = get_node("DialogueManager")
 
 func _ready():
-	dialogue_manager.start_dialogue("res://content/dialogue/Intro_Part3_test.json") #only for test
+	dialogue_manager.start_dialogue("res://content/new_dialogue/Intro_Part1.json") #only for test
 	file_dialog.connect("file_selected", self, "_on_file_selected")
 	dialogue_manager.connect("dialogue_finished", self, "_dialogue_finished")
 	open_file_dialog()

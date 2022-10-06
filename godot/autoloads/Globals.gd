@@ -10,6 +10,17 @@ var SKILL_LIFESTEAL = 5
 var music_volume := 0.8
 var effect_volume := 0.6
 
+var new_dialogs = true
+
+var language := {
+	"English" : false,
+	"German" : true
+}
+
+func reset_all_languages():
+	for key in language:
+		language[key] = false
+
 var flags := {
 	"AlexExhausted": false,
 	"DavidPresent": false,

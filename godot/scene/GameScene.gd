@@ -16,9 +16,16 @@ var paused : bool = false
 signal back_to_title
 signal end_of_dialog
 
-var dialogue_order = ["Intro_Part1", "Intro_Part2", "Intro_Part3", "Chapter2P1", "Chapter2P2", "Chapter2P3", "Chapter3", "Chapter4", "BossfightBeginning"]
+var dialogue_order
 
 func _ready():
+	if Globals.language["English"]:
+		if Globals.new_dialogs:
+			dialogue_order = ["Intro_Part1", "Intro_Part2", "Intro_Part3"]
+		else:
+			dialogue_order = ["Intro_Part1", "Intro_Part2", "Intro_Part3", "Chapter2P1", "Chapter2P2", "Chapter2P3", "Chapter3", "Chapter4", "BossfightBeginning"]
+	elif Globals.language["German"]:
+		dialogue_order = ["Intro_Part1", "Intro_Part2", "Intro_Part3"]
 	dialogue_manager.connect("dialogue_finished", self, "load_next_dialogue")
 	load_next_dialogue()
 	dialogue_manager.connect("dialogue_signal", self, "load_image")
@@ -55,7 +62,7 @@ func load_next_dialogue():
 	in_animation = true
 	
 	var tmp = dialogue_order.pop_front()
-	if tmp == "Intro_Part1":
+	if tmp.begins_with("Intro_Part1"):
 		intro_scene = intro_battle.instance()
 		add_child(intro_scene)
 		SoundController.play_music("Start_the_clock_alternate_version.mp3", 0)
@@ -66,7 +73,7 @@ func load_next_dialogue():
 		tween.interpolate_property(dialogue_manager, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 0.9)
 		tween.start()
 		yield(tween, "tween_all_completed")
-	elif tmp == "Intro_Part2":
+	elif tmp.begins_with("Intro_Part2"):
 		dialogue_manager.modulate = Color(1, 1, 1, 0)
 		dialogue_manager.change_box_style("Stage")
 		
@@ -81,12 +88,15 @@ func load_next_dialogue():
 		tween.interpolate_property(dialogue_manager, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 1.4)
 		tween.start()
 		yield(tween, "tween_all_completed")
-	elif tmp == "BossfightBeginning":
+	elif tmp.begins_with("BossfightBeginning"):
 		SoundController.play_music("Start_the_clock.mp3", 0, -100)
 		SoundController.crossfade_music_channels(1,0)
 	elif tmp == null:
 		emit_signal("end_of_dialog")
 		return
 	
-	dialogue_manager.start_dialogue("res://content/dialogue/" + tmp + ".json")
+	if Globals.new_dialogs:
+		dialogue_manager.start_dialogue("res://content/new_dialogue/" + tmp + ".json")
+	else:
+		dialogue_manager.start_dialogue("res://content/dialogue/" + tmp + ".json")
 	in_animation = false
