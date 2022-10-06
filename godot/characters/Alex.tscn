@@ -24,5 +24,3 @@ position = Vector2( 1, -6 )
 amount = 4
 process_material = SubResource( 1 )
 texture = ExtResource( 3 )
-
-[node name="Tween" type="Tween" parent="." index="3"]

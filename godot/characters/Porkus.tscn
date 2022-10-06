@@ -7,3 +7,6 @@
 [node name="Porkus" instance=ExtResource( 1 )]
 frames = ExtResource( 3 )
 script = ExtResource( 2 )
+
+[node name="AfterImage" parent="." index="0"]
+self_modulate = Color( 0.733333, 0.454902, 0.454902, 1 )

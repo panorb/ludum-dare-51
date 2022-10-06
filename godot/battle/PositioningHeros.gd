@@ -15,7 +15,7 @@ onready var dracula = get_node("Dracula")
 onready var health_bar_alex = get_node("Control/HealthBarAlex")
 
 onready var frame = get_node("Frame")
-var frame_left : bool = true
+var frame_left : bool = false
 var frame_level : int = 1
 
 onready var list_supporters = []
@@ -32,6 +32,9 @@ func _ready():
 	calculate_supporter_count()
 	init_positions()
 	reset_all_sprites()
+	
+	if not frame_left:
+		frame.position = alex.position
 	
 func calculate_supporter_count():
 	if Globals.flags["DavidPresent"]:
@@ -52,7 +55,7 @@ func calculate_supporter_count():
 	if Globals.flags["DrakulaPresent"]:
 		list_supporters.append(dracula)
 		number_of_supporter += 1
-	position_left_up = Vector2(24,48 + (3 - number_of_supporter) * 24)
+	position_left_up = Vector2(42,48 + (3 - number_of_supporter) * 24)
 
 func init_positions():
 	alex.position = alex_position_left_up + (2 * Vector2(0,48)) + Vector2(68,0)
@@ -124,7 +127,8 @@ func switch_sprite():
 		reset_all_sprites()
 	else:
 		if list_supporters[frame_level - 1].on_cooldown:
-			print("Skill on Cooldown.")
+			SoundController.play_effect("error.wav")
+			list_supporters[frame_level - 1].flash_indicators()
 		else:
 			list_supporters[frame_level-1].switch_sprite(alex.attack_type)
 		

@@ -82,32 +82,35 @@ autostart = true
 
 [node name="TimerDavid" type="Timer" parent="BlipTimers"]
 process_mode = 0
-wait_time = 0.3
+wait_time = 0.22
 autostart = true
 script = ExtResource( 4 )
 animation_duration_per_char = 0.008
-pitch_scale = 2.0
 
 [node name="TimerPorkus" type="Timer" parent="BlipTimers"]
 process_mode = 0
-wait_time = 0.6
+wait_time = 0.28
 autostart = true
 script = ExtResource( 4 )
 animation_duration_per_char = 0.03
+sound_file = [ "porkus_blip_1.wav", "porkus_blip_2.wav" ]
 
 [node name="TimerAlex" type="Timer" parent="BlipTimers"]
 process_mode = 0
-wait_time = 0.45
+wait_time = 0.25
 autostart = true
 script = ExtResource( 4 )
+sound_file = [ "alex_blip_1.wav", "alex_blip_2.wav" ]
 
 [node name="TimerZehotath" type="Timer" parent="BlipTimers"]
-wait_time = 1.2
+wait_time = 0.27
+autostart = true
 script = ExtResource( 4 )
 animation_duration_per_char = 0.05
-sound_file = "time_stealer_blip.wav"
+sound_file = [ "time_stealer_blip.wav" ]
 
 [node name="TimerGandalf" type="Timer" parent="BlipTimers"]
+wait_time = 0.24
+autostart = true
 script = ExtResource( 4 )
 animation_duration_per_char = 0.04
-sound_file = "gandalf_blip.wav"
