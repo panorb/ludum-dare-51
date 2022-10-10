@@ -69,10 +69,12 @@ func load_next_dialogue():
 		dialogue_manager.modulate = Color(1, 1, 1, 0)
 		dialogue_manager.change_box_style("Dialogue")
 		
+		dialogue_manager.dialogue_box.isReady = false
 		yield(get_tree().create_timer(2.4), "timeout")
 		tween.interpolate_property(dialogue_manager, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 0.9)
 		tween.start()
 		yield(tween, "tween_all_completed")
+		dialogue_manager.dialogue_box.isReady = true
 	elif tmp.begins_with("Intro_Part2"):
 		dialogue_manager.modulate = Color(1, 1, 1, 0)
 		dialogue_manager.change_box_style("Stage")

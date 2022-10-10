@@ -15,8 +15,16 @@ onready var proceed_indicator_timer = get_node("BoxPanel/ProceedIndicator/Timer"
 var _animation_duration_per_char = 0.014
 
 var _play_blips = false
+var skipable = false
+var isReady = true setget setIsReady, getIsReady
 
 signal reading_finished
+
+func setIsReady(value : bool):
+	isReady = value
+	
+func getIsReady():
+	return isReady
 
 func _ready():
 	for blip_timer in blip_timers_node.get_children():
@@ -56,9 +64,16 @@ func _get_display_name():
 	return character_name.text
 
 func _input(event):
-	if event.is_action_pressed("option_select"):
+	if isReady and event.is_action_pressed("option_select"):
 		_play_blips = false
-		emit_signal("reading_finished")
+		if skipable:
+			skipable = false
+			emit_signal("reading_finished")
+		else:
+			tween.remove_all()
+			tween.interpolate_property(dialogue_text, "percent_visible", 1.0, 1.0, len(self.text) *_animation_duration_per_char)
+			tween.start()
+			skipable = true
 
 func _on_ProceedIndicator_switch():
 	proceed_indicator.visible = dialogue_text.percent_visible == 1.0 and not proceed_indicator.visible
@@ -70,5 +85,6 @@ func _animate_dialogue_text():
 	tween.start()
 
 func _animation_finished():
+	skipable = true
 	_play_blips = false
 

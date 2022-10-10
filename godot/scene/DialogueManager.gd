@@ -155,7 +155,6 @@ func show_message():
 		elif Globals.language["German"]:
 			texts = gen_list_of_readable_texts_character(current_node["text"]["GER"])
 		still_text = true
-		print(texts)
 		dialogue_box.display_name = texts.pop_front().trim_suffix(":")
 		dialogue_box.text = texts.pop_front()
 
