@@ -1,6 +1,6 @@
-[gd_resource type="Theme" load_steps=4 format=2]
+[gd_resource type="Theme" load_steps=5 format=2]
 
-[ext_resource path="res://gui/alagart_14.tres" type="DynamicFont" id=1]
+[ext_resource path="res://gui/alagard_german.ttf" type="DynamicFontData" id=1]
 
 [sub_resource type="StyleBoxFlat" id=2]
 bg_color = Color( 0, 0.596078, 0.862745, 1 )
@@ -8,7 +8,10 @@ bg_color = Color( 0, 0.596078, 0.862745, 1 )
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 1, 0.635294, 0.0784314, 1 )
 
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 1 )
+
 [resource]
-default_font = ExtResource( 1 )
+default_font = SubResource( 4 )
 ProgressBar/styles/bg = SubResource( 2 )
 ProgressBar/styles/fg = SubResource( 3 )

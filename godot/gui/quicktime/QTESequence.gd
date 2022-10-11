@@ -27,7 +27,20 @@ func _process(delta):
 
 
 func _set_sequence(new_val):
-	sequence = new_val
+	for key in new_val:
+		if !key.begins_with("qte_"):
+			if key.ends_with("r"):
+				sequence.append("qte_right")
+			elif key.ends_with("l"):
+				sequence.append("qte_left")
+			elif key.ends_with("u"):
+				sequence.append("qte_up")
+			elif key.ends_with("d"):
+				sequence.append("qte_down")
+			else:
+				sequence.append("qte_" + key)
+		else:
+			sequence.append(key)
 	
 	for prompt_node in prompts_node.get_children():
 		prompt_node.queue_free()

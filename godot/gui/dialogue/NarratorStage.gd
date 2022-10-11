@@ -49,6 +49,7 @@ func _on_ProceedIndicator_switch():
 	proceed_indicator.visible = dialogue_text.percent_visible == 1.0 and not proceed_indicator.visible
 
 func _animation_finished():
+	skipable = true
 	_play_blips = false
 
 func _animate_dialogue_text():

@@ -12,6 +12,8 @@ var effect_volume := 0.6
 
 var new_dialogs = true
 
+var player_version = true
+
 var language := {
 	"English" : false,
 	"German" : true
@@ -23,10 +25,11 @@ func reset_all_languages():
 
 var flags := {
 	"AlexExhausted": false,
-	"DavidPresent": false,
+	"DavidPresent": true,
 	"PorkusPresent": false,
 	"LilithPresent": false,
 	"AelrinPresent": false,
 	"DrakulaPresent": false,
-	"GandalfPresent": false
+	"GandalfPresent": false,
+	"hasSupport": false
 }

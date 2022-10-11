@@ -24,6 +24,7 @@ var list_of_next = []
 
 signal dialogue_signal(command)
 signal dialogue_finished
+signal action_intro
 
 func change_box_style(new_style):
 	if box_style == new_style:
@@ -91,6 +92,10 @@ func find_start():
 func set_local_var():
 	var var_name = current_node["var_name"]
 	
+	#only for battle tutorial
+	if var_name == "action":
+		emit_signal("action_intro", current_node["value"])
+	
 	if current_node["operation_type"] == "ADD":
 		local[var_name] += current_node["value"]
 	elif current_node["operation_type"] == "SUBSTRACT":
@@ -133,11 +138,17 @@ func show_message():
 		change_box_style("Choice")
 		var tmp = []
 		list_of_next.clear()
-		choice_box.question = current_node["text"]["ENG"]
+		if Globals.language["English"]:
+			choice_box.question = current_node["text"]["ENG"]
+		elif Globals.language["German"]:
+			choice_box.question = current_node["text"]["GER"]
 		for i in range(len(current_node["choices"])):
 			if not current_node["choices"][i]["is_condition"] or \
 			 evaluate_complex_condition(current_node["choices"][i]["condition"]):
-				tmp.append(current_node["choices"][i]["text"]["ENG"])
+				if Globals.language["English"]:
+					tmp.append(current_node["choices"][i]["text"]["ENG"])
+				elif Globals.language["German"]:
+					tmp.append(current_node["choices"][i]["text"]["GER"])
 				list_of_next.append(current_node["choices"][i]["next"])
 		choice_box.choices = tmp
 	elif current_node["character"][0] == "Narrator":
@@ -198,9 +209,9 @@ func gen_list_of_readable_texts_character(text : String):
 			if one_text != "":
 				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
 				one_text = ""
-		elif len(one_text) + len(single_words[i]) < 120:
+		elif len(one_text) + len(single_words[i]) < 130:
 			one_text = " ".join([one_text, single_words[i]])
-			if len(one_text) > 90 and end_of_sentence(one_text):
+			if len(one_text) > 95 and end_of_sentence(one_text):
 				return_texts.append(one_text.trim_prefix(" ").trim_suffix(" "))
 				one_text = ""
 		else:
@@ -219,7 +230,6 @@ func end_of_sentence(text : String):
 		return true
 	else:
 		return false
-	
 
 func auto_next():
 	if still_text:
