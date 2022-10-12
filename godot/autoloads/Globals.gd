@@ -25,7 +25,7 @@ func reset_all_languages():
 
 var flags := {
 	"AlexExhausted": false,
-	"DavidPresent": true,
+	"DavidPresent": false,
 	"PorkusPresent": false,
 	"LilithPresent": false,
 	"AelrinPresent": false,

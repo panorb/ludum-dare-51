@@ -26,12 +26,14 @@ onready var dialogue_manager = get_node("DialogueManager")
 onready var tween = get_node("Tween")
 
 onready var skip_button : Button = get_node("SkipButton")
+onready var miss_label = get_node("PositioningBoss/Miss")
 
 onready var list_supporters = []
 var end_off_game : bool = false
 var in_tutorial = true
 var enter_delay = false
 var first_helper : String = ""
+var missed_attack : bool = false
 
 var in_animation = false
 
@@ -179,8 +181,16 @@ func calucuate_damage():
 		yield(tween, "tween_all_completed")
 		
 		damage_alex()
-		SoundController.play_effect("meat_impact.wav")
-		time_stealer.animate_damage()
+		if missed_attack:
+			missed_attack = false
+			tween.interpolate_property(miss_label, "modulate", Color(1, 1, 1, 0), Color(1, 1, 1, 1), 0.15)
+			tween.start()
+			yield(tween, "tween_all_completed")
+			tween.interpolate_property(miss_label, "modulate", Color(1, 1, 1, 1), Color(1, 1, 1, 0), 0.15)
+			tween.start()
+		else:
+			SoundController.play_effect("meat_impact.wav")
+			time_stealer.animate_damage()
 		
 		tween.interpolate_property(alex, "position", alex.position, alex.original_pos, 0.8, Tween.TRANS_EXPO)
 		tween.start()
@@ -240,6 +250,8 @@ func damage_alex():
 				time_stealer.health -= damage * critdamage / 100
 			else:
 				time_stealer.health -= damage
+		else:
+			missed_attack = true
 	
 	if list_skills_activate.has(Globals.SKILL_LIFESTEAL):
 		alex.health += damage / 5
